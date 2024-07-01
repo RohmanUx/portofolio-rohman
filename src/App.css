@@ -85,7 +85,7 @@
     grid-row: 1/1; 
     border-radius: 1200px; 
 } 
-#item-3{ 
+#item-3{  
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -94,7 +94,7 @@
     padding-block: 32px;
     grid-column: span 2; 
     grid-row: 2/2; 
-    background-color: rgba(0, 255, 255, 0.752);
+    background-color: #535c47;
     border-radius: 1200px;
 
 }
@@ -119,6 +119,7 @@
 } 
 
 #list-4{ 
+    color: rgba(255, 255, 255, 0.803);
     letter-spacing: 2px;
     margin-bottom: 14px; 
     font-size: 26px; 
@@ -131,6 +132,7 @@
 }
 
 #img-0{ 
+    color: rgba(255, 255, 255, 0.807);
     margin-inline: 80px;
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +171,7 @@
     border-left-width: 0px; 
     border-bottom-width: 1px; 
     border-right-width: 1px; 
-    padding-block: 32px;
+    padding-block: 40px;
     grid-column: 1/1; 
     grid-row: 1/2;    
 }  
@@ -179,7 +181,7 @@
             border-left-width: 0px; 
             border-bottom-width: 1px; 
             border-right-width: 1px;    
-    padding-block: 32px;
+    padding-block: 40px;
     grid-column: 2/2; 
     grid-row: 1/2; 
 }  
@@ -189,7 +191,7 @@
             border-left-width: 0px; 
             border-bottom-width: 1px; 
             border-right-width: 0px;    
-    padding-block: 32px;
+    padding-block: 40px;
     grid-column: 3/3; 
     grid-row: 1/2; 
 } 
@@ -203,7 +205,7 @@
             border-left-width: 1px; 
             border-bottom-width: 1px; 
             border-right-width: 0px;    
-    padding-block: 32px;
+    padding-block: 40px;
     grid-column: 4/4; 
     grid-row: 1/2; 
 } 
@@ -214,11 +216,12 @@
             border-left-width: 1px; 
             border-bottom-width: 1px; 
             border-right-width: 0px;    
-    padding-block: 32px;
+    padding-block: 40px;
     grid-column: 5/5; 
     grid-row: 1/2; 
 } 
 #pro { 
+    margin-bottom: 60px;
     margin-block: 100px;
     margin-inline: 120px; 
     display: grid; 
