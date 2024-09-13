@@ -44,7 +44,7 @@ const Navbar = () => {
       >
         <div>
           <h1 className="text-2xl sm:text-2xl font-medium text-black ml-2">
-            rohman<span className=" text-orange-800">Dev</span>
+            rohman <span className=" text-orange-800">Dev</span>
           </h1>
         </div>
         <div className="hidden md:flex items-center">
@@ -190,7 +190,7 @@ const Navbar = () => {
 
     {/* Quote and Experience */}
     <motion.div
-      className="mt-8 max-w-full p-0 bg-[#F6F6F6] rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 "
+      className="mt-8 max-w-full p-4 bg-[#F6F6F6] rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 "
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
