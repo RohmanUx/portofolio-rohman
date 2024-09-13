@@ -374,7 +374,7 @@ const Navbar = () => {
 </div> 
 
 <div> 
-<div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0"> 
+<div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-0 md:px-0 lg:px-0"> 
   {/* Contact us Page 4  */}
   <div className="h-[600px] flex justify-center flex-col items-center"> 
   <motion.h1
