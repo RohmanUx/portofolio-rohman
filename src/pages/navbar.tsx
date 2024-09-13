@@ -243,7 +243,7 @@ const Navbar = () => {
   </div>
 
   <div className="flex flex-col justify-center space-y-4 px-4 md:px-12">
-    <p className="uppercase text-xs md:text-sm">About me </p>
+    <p className="uppercase text-xs md:text-sm">Tentang saya </p>
     <h1 className="text-2xl md:text-4xl">
       Kelola proyek <br /> dengan mudah dengan kami  <br /> Kembangkan keahlian anda 
     </h1>
