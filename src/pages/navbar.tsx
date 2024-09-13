@@ -1,141 +1,394 @@
-import { Link } from 'react-router-dom';
-import "./svg/hallo.svg"
-function Navbar() {
-  return ( 
-  <div> 
-    { /* navbar */ }
-    <div style={{ display: "flex", alignItems: "center", backgroundColor: "White", padding: "24px" , justifyContent: 'space-between'}}>
-      <div id='logo'>     
-      <h1 id='logo-0'  style={{ fontSize: 24, fontWeight: 600, marginLeft: 10, color: 'black'}}> Surf_dev </h1>
-      
-      </div>
-      <div id="menu">
-        <ul style={{ display: 'flex', listStyle: "none", gap: 50, justifyContent: 'center', fontSize: 16}}>   
+'use client'
+import { Link } from "react-router-dom";
+import "./svg/hallo.svg";
+import { motion } from "framer-motion";
+import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import necessary icons
+import { useState } from "react";
+import { BiQuestionMark } from "react-icons/bi";
 
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+    
+  return (
+    <div>
+  { /*navbar*/ }
+      <div>
+      <motion.div
+        className="fixed top-0 left-0 w-full py-1 flex items-center justify-between bg-[#FFF] bg-opacity-60 backdrop-blur-lg shadow-md z-50 px-4 sm:px-8 md:px-16 lg:px-[138px]"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div>
+          <h1 className="text-xl sm:text-2xl font-semibold text-black ml-2">
+            rohmanDev
+          </h1>
+        </div>
+        <div className="hidden md:flex items-center">
+          <ul className="flex list-none gap-6 sm:gap-8 md:gap-12 font-normal text-base sm:text-lg md:text-xl">
+            <li>
+              <Link to="/" className="hover:text-blue-500 transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-blue-500 transition-colors">
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="hover:text-blue-500 transition-colors">
+                Help
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ">
+          <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-600 transition-colors border-[1px] border-black">
+            Meeting
+          </button>
+          <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-600 transition-colors border-[1px] border-black">
+            Contract
+          </button>
+        </div>
+        <button
+          className="md:hidden flex items-center"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </motion.div>
+      <div
+        className={`fixed top-0 left-0 w-full bg-[#FFF] bg-opacity-60 backdrop-blur-lg shadow-md z-40 px-4 py-2 md:hidden transition-transform transform ${
+          isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <ul className="flex flex-col list-none gap-4 font-normal text-lg">
           <li>
-            <Link to="/"> Home </Link>
-          </li> 
-           <li> 
-            <Link to="/"> About me </Link>
+            <Link
+              to="/"
+              className="hover:text-blue-500 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/">Features</Link>
+            <Link
+              to="/"
+              className="hover:text-blue-500 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Portfolio
+            </Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
-          </li> 
-          <li>
-            <Link to="/About"> help </Link>
+            <Link
+              to="/"
+              className="hover:text-blue-500 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Help
+            </Link>
           </li>
         </ul> 
+        <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-4">
+          <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-600 transition-colors border-[1px] border-black">
+            Meeting
+          </button>
+          <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-600 transition-colors border-[1px] border-black">
+            Contract
+          </button>
+        </div>
+
       </div>
-     <div id='button'> 
-         <button id='button-2'> meeting </button>   
-         <button id='button-1'> contract  </button>   
-             </div>  
-     </div> 
-     { /* hero page */ }
-                 <div id='container-2'>  
-                    <div id='item-1'> 
-                    <p id='list-1'> so why </p>
-                    <h1 id='list-2'> I can Help you <br /> to create <br /> project </h1>  
-                    <p id='list-3'> we're the most trusted place for people and businesses to <br /> track all of your account balances, transactions, and <br /> investment in one place </p> 
-                    <button id='button-3'> My Sertificate </button>
-                    </div>
-                    <div id='item-2'> 
-            
-                        </div> 
-                            <div id='item-3'>  
-                        <p id='list-4'> <q>I can't. Phyton, Flutter, ReactNative,  <br /> html, css, react, vue, js, mySql. <br /> use to planning project</q>  </p>
-                            <div id='img-0'> <img id='img'    src='https://cdn.dribbble.com/userupload/15332517/file/original-a64cd79737df1ee5c2451eb8c825a5d5.png?resize=1200x900' width={50} height={50}></img>
-                             <div> 
-                              <p id='list-5'> muhammad rachman</p> 
-                              <p id='list-6'> my Experience </p>  </div>    </div> 
-                                 </div>                   
-                 </div>
-               <div id='patrner'> 
-                <div id='partner-1'> linkedln </div>
-                <div id='partner-2'> jobseek </div>
-                <div id='partner-3'> Jooble</div>
-                <div id='partner-4'> Glints </div>
-                <div id='partner-5'> Deals </div>
-               </div>
-               
-               { /* page 2 */ } 
-               <div id='pro'> 
-                <div id='pro-1'> 
-                    <div id='pro-1-0'> <div id='pro-1-2'> 20 Years<br /> on Exsperience <br /> Google ux</div> </div>
-                </div>
-                 
-                <div id='pro-2'>  <div id='pro-2-0'> 
-                    <p id='program-3'> About me</p> <br /> 
-                    <h1 id='program-4'> Easily manage Your <br /> Project & grow  <br /> Money  </h1>  
-                    <p id='program-5'> we're the most trusted place for people and businesses to <br /> track all of your account balances, transactions, and <br /> investment in one place </p> <br />  
-                     <button id='button-0'> linkldn Profile </button>    </div>       
-                 </div>  
+      </div>      
+   
+   
+  { /* About me Page 1 */ }
+    <div>
+  <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-[#535c47] md:pt-28 md:pb-24 md:w-auto"> 
+    <div> 
+      <div className="flex flex-col items-start justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between px-4 md:px-0">
+        { /* Text and Button */ }
+        <motion.div
+          className="flex flex-col gap-4 max-w-full md:px-0 md:max-w-4xl "
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <p className="text-base bg-[#535c47] py-1 border-[#F6F6F6] border-[1px] w-28 md:text-lg md:w-28 flex justify-center items-center rounded-full text-[#F6F6F6] ">
+            So why <BiQuestionMark className="text-xl flex items-center h-full  text-[#F6F6F6] "/> 
+          </p>
+          <h1 className="text-3xl font-bold text-[#F6F6F6] md:text-4xl md:text-gray-100">
+            I Can Help You <br /> to Create <br /> Projects
+          </h1>
+          <p className="text-base text-[#F6F6F6] md:text-lg">
+            We're the most trusted place for people and businesses to
+            <br className="hidden md:block" /> track all of your account balances, transactions, and
+            <br className="hidden md:block" /> investments in one place.
+          </p>
+          <button className="bg-[#F6F6F6] py-2 rounded-full hover:bg-blue-400 transition-colors text-[#1E1F24] w-32 md:w-40">
+            My Certificate
+          </button>
+        </motion.div>
 
+        {/* Image Section */}
+        <motion.div
+          className="flex justify-center mt-8 md:mt-0"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <img
+            src="https://cdn.dribbble.com/userupload/15332517/file/original-a64cd79737df1ee5c2451eb8c825a5d5.png?resize=1200x900"
+            alt="Example"
+            width={350}
+            height={280}
+            className="rounded-2xl shadow-md md:w-[500px] md:h-[400px]"
+          />
+        </motion.div>
+      </div>
+    </div>
 
-                <div> </div>   
+    {/* Quote and Experience */}
+    <motion.div
+      className="mt-8 max-w-full p-4 bg-[#F6F6F6] rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-6 mx-4"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:px-6 border-black ">
+        <q>
+          I can't. js, ts, tailwind,
+          <br className="hidden md:block" /> HTML, CSS, React, prismaORM, shadCn ui, MySQL.
+          <br className="hidden md:block" /> Use to planning project
+        </q>
+      </p>
+      <div className="flex items-center gap-4">
+        <img
+          src="https://cdn.dribbble.com/userupload/15332517/file/original-a64cd79737df1ee5c2451eb8c825a5d5.png?resize=1200x900"
+          alt="Muhammad Rachman"
+          width={60}
+          height={60}
+          className="rounded-full md:w-20 md:h-20"
+        />
+        <div>
+          <p className="text-[#1E1F24] font-semibold text-sm md:text-base">Muhammad Rachman</p>
+          <p className="text-[#1E1F24] text-sm md:text-base">My Experience</p>
+        </div>
+      </div>
+    </motion.div>
 
-               </div> 
-               { /* page 3 */ }
-                         { /*  page 4 */ }
-             
-             <div id='page-4'> 
-                      <div id='page-4-0'> 
-                        <h1 id='list-15'> I Can't solution to all <br /> Project problem</h1>
-                        <p id='list-16'> Change the way you do money - from your time project to your every <br /> day Spending, at home or abroad.  </p>
-                      </div> 
-                       <div id='page-4-2'> 
+    {/* Partners */}
+    <div className="mt-8 max-w-full mx-auto flex flex-wrap justify-center gap-4 md:gap-6 md:mt-10 md:max-w-2xl">
+      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+        LinkedIn
+      </div>
+      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+        JobSeek
+      </div>
+      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+        Jooble
+      </div>
+      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+        Glints
+      </div>
+      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+        Deals
+      </div>
+    </div>
+  </div>
+    </div>
+      <div className="space-y-20">
+        <div className="space-y-20">        
+          <div className="space-y-20">
+ 
+  { /* Page 2 */ }
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full">
+  <div
+    className="relative rounded-xl bg-cover bg-no-repeat w-full h-[300px] md:w-[600px] md:h-[600px]"
+    style={{
+      marginInline: "0",
+      backgroundImage:
+        "url(https://th.bing.com/th/id/R.c4580930a1b10329e559757c9d7c4b5d?rik=DwAvzSSeJa3zLw&riu=http%3a%2f%2fwww.kranse.com%2fcdn%2fshop%2farticles%2ftips_for_test_anxiety_and_sat_1024x1024.jpg%3fv%3d1509392551&ehk=%2f5GsVQ4%2fn51EVdTTANIhFNEby5hgMWkitSe8QbwO2js%3d&risl=&pid=ImgRaw&r=0)",
+      borderRadius: "28px",
+      paddingBlock: "32px",
+      gridColumn: "1 / 2", // Adapt to one column on mobile
+      gridRow: "1 / 2",
+    }}
+  >
+    <div className="absolute bg-black/50 text-white flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[25px] md:right-[25px] w-24 h-16 md:w-36 md:h-24 border-white border-[1px]">
+      <div className="flex justify-center text-xs md:text-base">
+        2 Years <br /> on Experience <br /> Coding UX
+      </div>
+    </div>
+  </div>
 
-                    <div id="list-17"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000" id='img-1'> <path d="M448.67-195.33h60v-51.34q57.33-7.66 92-38 34.66-30.33 34.66-84 0-48-27.33-81t-97.33-61Q452-533.33 427-551q-25-17.67-25-47.67Q402-628 423.17-645q21.16-17 58.83-17 30.67 0 51.33 14.5Q554-633 566.67-606.67l53.33-24q-15-35-43.5-57t-65.83-25.66V-764h-60v50.67Q400-705 371-673.67q-29 31.34-29 75 0 48.34 29.17 77.34 29.16 29 88.83 52.66 65.67 26.34 90.5 47.34 24.83 21 24.83 52.66 0 32.34-25.5 50.5Q524.33-300 486.67-300q-37 0-65.84-21.5Q392-343 380-382l-56 20q18.67 46.67 48.83 74.17 30.17 27.5 75.84 39.16v53.34ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/> </svg> 
-                       <div id='room-0'> <div id='img-2'>  front end </div> 
-                      <div id='img-3'>  Take advantage of Gerrbase <br /> saving and deposit to manage <br /> or grow your money  </div> 
-                         </div> </div> 
+  <div className="flex flex-col justify-center space-y-4 px-4 md:px-12">
+    <p className="uppercase text-xs md:text-sm">About me </p>
+    <h1 className="text-2xl md:text-4xl">
+      Easily manage Your <br /> Project & grow <br /> Money
+    </h1>
+    <p className="mt-2 md:mt-4 text-sm md:text-base">
+      We're the most trusted place for people and businesses to
+      track all of your account balances, transactions, and
+      investments in one place.
+    </p>
+    <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40">
+      My Portfolio
+    </button>
+  </div>
+</div>
 
-                    <div id='list-18'> 
-                    <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="40px" fill="#fffff" id='img-1'> <path d="M640-520q17 0 28.5-11.5T680-560q0-17-11.5-28.5T640-600q-17 0-28.5 11.5T600-560q0 17 11.5 28.5T640-520Zm-320-80h200v-80H320v80ZM180-120q-34-114-67-227.5T80-580q0-92 64-156t156-64h200q29-38 70.5-59t89.5-21q25 0 42.5 17.5T720-820q0 6-1.5 12t-3.5 11q-4 11-7.5 22.5T702-751l91 91h87v279l-113 37-67 224H480v-80h-80v80H180Zm60-80h80v-80h240v80h80l62-206 98-33v-141h-40L620-720q0-20 2.5-38.5T630-796q-29 8-51 27.5T547-720H300q-58 0-99 41t-41 99q0 98 27 191.5T240-200Zm240-298Z"/> </svg> 
-                       <div id='room-0'> <div id='img-2'>  back end </div> 
-                      <div id='img-3'>  Take advantage of Gerrbase <br /> saving and deposit to manage <br /> or grow your money  </div>                 
-                       </div> </div>
+    { /* Page 3 */ }
+            <div className="space-y-20">
+  <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-24">
+    <h1 className="text-4xl text-white mb-4 md:text-5xl">
+      I Can't solve some Project problems
+    </h1>
+    <p className="text-white md:text-lg">
+      It's so Important to modern web next Generation
+    </p>
 
-                    <div id='list-19'> 
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fffff" id='img-1'> <path d="M600-160q-134 0-227-93t-93-227q0-134 93-227t227-93q134 0 227 93t93 227q0 134-93 227t-227 93Zm-310.67-11.33q-110.66-18.67-180-107Q40-366.67 40-480q0-113.33 69.33-201.67 69.34-88.33 180-107V-722q-82.66 19-132.66 87.33-50 68.34-50 154.67 0 86.33 50 154.67 50 68.33 132.66 87.33v66.67ZM600-480Zm0 253.33q104.67 0 179-74.33t74.33-179q0-104.67-74.33-179t-179-74.33q-104.67 0-179 74.33t-74.33 179q0 104.67 74.33 179t179 74.33Z"/> </svg> 
-                       <div id='room-0'> <div id='img-2'>  ui & ux </div> 
-                      <div id='img-3'>  Take advantage of Gerrbase <br /> saving and deposit to manage <br /> or grow your money  </div>               
-                    </div> </div>
+    {/* Icon grid */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
+      {/* Front End */}
+      <motion.div
+        className="bg-[#e0f7fa] text-black rounded-lg p-4 flex flex-col items-center"
+        variants={cardVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <FaCode size={40} className="text-blue-500" />
+        <div className="mt-6 text-center">
+          <div className="font-semibold">Front End</div>
+          <div className="text-sm mt-2">
+            I can Redux, React hooks, HTML, CSS, Tailwind CSS, Next.js, and
+            React. I'm skilled in building modern, responsive web applications
+          </div>
+        </div>
+      </motion.div>
 
-                    <div id='list-20'> 
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000" id='img-1'><path d="M470-320h29v-32q28-4 47.5-23t19.5-49q0-26-20-43.5T500-496v-74q10 3 16.5 10t9.5 17l36-15q-7-21-24-33.5T500-608v-32h-30v31q-28 3-47.5 20.5T403-542q0 27 20.5 45t46.5 29v79q-16-5-27-17t-15-28l-35 15q8 28 28 46t49 22v31Zm30-70v-66q11 5 19.5 12t8.5 21q0 16-8 22.5T500-390Zm-30-119q-11-5-20-12t-9-21q0-14 9-20.5t20-8.5v62ZM320-200q-117 0-198.5-81.5T40-480q0-117 81.5-198.5T320-760h320q117 0 198.5 81.5T920-480q0 117-81.5 198.5T640-200H320Zm0-66.67h320q88.53 0 150.93-62.36 62.4-62.35 62.4-150.83 0-88.47-62.4-150.97T640-693.33H320q-88.53 0-150.93 62.36-62.4 62.35-62.4 150.83 0 88.47 62.4 150.97T320-266.67ZM480-480Z"/> </svg> 
-                       <div id='room-0'> <div id='img-2'>  ai analist </div> 
-                      <div id='img-3'>  Take advantage of Gerrbase <br /> saving and deposit to manage <br /> or grow your money  </div> 
-                      </div>  </div> 
-                         </div>   
-       
-       
-             { /* page 5 */ } 
+      { /* Back End */ }
+      <motion.div
+        className="bg-[#ffebee] text-black rounded-lg p-4 flex flex-col items-center"
+        variants={cardVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <FaDatabase size={40} className="text-red-500" />
+        <div className="mt-6 text-center">
+          <div className="font-semibold">Back End</div>
+          <div className="text-sm mt-2">
+            I can work with Prisma, MySQL, Express, and Node.js. I’m experienced
+            in developing robust back-end systems and managing databases.
+          </div>
+        </div>
+      </motion.div>
 
+      {/* UI & UX */}
+      <motion.div
+        className="bg-[#fff3e0] text-black rounded-lg p-4 flex flex-col items-center"
+        variants={cardVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <FaPencilRuler size={40} className="text-orange-500" />
+        <div className="mt-6 text-center">
+          <div className="font-semibold">Interest</div>
+          <div className="text-sm mt-2">
+            I want to learn MongoDB, Svelte, Material UI, Framer Motion, color
+            palette, and Sass. I'm interested in expanding my skills in modern
+            web development and design.
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</div> 
+</div> 
+</div> 
 
-             </div>
-             <div id='page-5'> 
-                    <h1 id='list-11'> Ready to star a new <br /> Exsperience </h1>  
-                    <p id='list-12'> we're the most trusted place for people and businesses to track all of your account balances, transactions, etc</p> 
-                    <button id='button-13'> Contact Mail </button>           
-                    <p id='list-14'> Surf.dev</p>
-                    </div>  
+<div> 
+<div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0"> 
+  {/* Contact us Page 4  */}
+  <div className="h-[600px] flex justify-center flex-col items-center"> 
+  <motion.h1
+    className="text-center text-[32px] md:text-[48px] pb-2 md:pb-4"
+    initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+  >
+    Ready to start a new <br /> Experience
+  </motion.h1>
+  <motion.p
+    className="pb-3 text-center text-sm md:text-base"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1, delay: 0.5 }}
+  >
+    We're the most trusted place for people and businesses to track all
+    of your account balances, transactions, etc.
+  </motion.p>
+  <motion.button
+    className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36"
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 300 }}
+  >
+    Contact email
+  </motion.button>
+  <motion.p
+    className="text-gray-700 text-[60px] md:text-[120px] shadow-black text-shadow mt-4 md:mt-6"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1.5 }}
+  >
+    business with me!!
+  </motion.p> </div> 
+  {/* Footer page 5 */}
+  <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44">
+  <p className="text-xs md:text-sm text-center md:text-left mb-2 md:mb-0">
+    ©2024 rohmanDev, All rights reserved
+  </p>
+  <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+    <motion.p
+      className="underline text-xs md:text-sm text-center md:text-left"
+      whileHover={{ scale: 1.05, color: "#ff6347" }}
+    >
+      Term & Condition
+    </motion.p>
+    <motion.p
+      className="underline text-xs md:text-sm text-center md:text-left"
+      whileHover={{ scale: 1.05, color: "#ff6347" }}
+    >
+      Privacy Policy
+    </motion.p>
+  </div>
+  </div>
 
-      { /* navbar */ } 
-      <div id='page-6-4'> 
-  <p> @2024 Rahman, All right served</p>  
-  <p id='list-34'> Term & Condition <li> Privacy Policy </li>   </p>  
-  </div>      
-
-
-
-
+    </div> 
+    </div> 
+    </div> { " " } 
     </div>
   );
-}
+};
 
 export default Navbar;
