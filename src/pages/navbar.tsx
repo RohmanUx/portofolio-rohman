@@ -237,7 +237,7 @@ const Navbar = () => {
   >
     <div className="absolute bg-black/50 text-white flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[25px] md:right-[25px] w-24 h-16 md:w-36 md:h-24 border-white border-[1px]">
       <div className="flex justify-center text-xs md:text-base">
-        2 Years <br /> Pengalaman di <br /> Coding ux
+        1 Years <br /> Pengalaman <br /> Coding ux
       </div>
     </div>
   </div>
