@@ -5,9 +5,28 @@ import { motion } from "framer-motion";
 import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import necessary icons
 import { useState } from "react";
 import { BiQuestionMark } from "react-icons/bi";
+import Box from "@mui/system/Box";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const images = [
+    "https://th.bing.com/th/id/R.c4580930a1b10329e559757c9d7c4b5d?rik=DwAvzSSeJa3zLw&riu=http%3a%2f%2fwww.kranse.com%2fcdn%2fshop%2farticles%2ftips_for_test_anxiety_and_sat_1024x1024.jpg%3fv%3d1509392551&ehk=%2f5GsVQ4%2fn51EVdTTANIhFNEby5hgMWkitSe8QbwO2js%3d&risl=&pid=ImgRaw&r=0",
+    "https://i.pinimg.com/564x/8d/d1/b5/8dd1b56d3d32905ea04ac5e536a21236.jpg",
+    "https://i.pinimg.com/564x/79/11/4a/79114a65b27221bed1e1488950c04cd3.jpg", 
+   ];
+  
+    const [currentIndex, setCurrentIndex] = useState(0);
+  
+    const handleNext = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+  
+    const handlePrev = () => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      );
+    };
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -24,8 +43,8 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
       >
         <div>
-          <h1 className="text-xl sm:text-2xl font-semibold text-black ml-2">
-            rohmanDev
+          <h1 className="text-2xl sm:text-2xl font-medium text-black ml-2">
+            rohman<span className=" text-orange-800">Dev</span>
           </h1>
         </div>
         <div className="hidden md:flex items-center">
@@ -126,10 +145,10 @@ const Navbar = () => {
     <div>
   <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-[#535c47] md:pt-28 md:pb-24 md:w-auto"> 
     <div> 
-      <div className="flex flex-col items-start justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between px-4 md:px-0">
+      <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between px-4 md:px-0 items-center  ">
         { /* Text and Button */ }
         <motion.div
-          className="flex flex-col gap-4 max-w-full md:px-0 md:max-w-4xl "
+          className="flex flex-col gap-4 max-w-full md:px-0 md:max-w-4xl items-center md:items-start"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -137,10 +156,10 @@ const Navbar = () => {
           <p className="text-base bg-[#535c47] py-1 border-[#F6F6F6] border-[1px] w-28 md:text-lg md:w-28 flex justify-center items-center rounded-full text-[#F6F6F6] ">
             So why <BiQuestionMark className="text-xl flex items-center h-full  text-[#F6F6F6] "/> 
           </p>
-          <h1 className="text-3xl font-medium text-[#F6F6F6] md:text-4xl md:text-gray-100 pb-1">
+          <h1 className="text-3xl font-medium text-[#F6F6F6] md:text-4xl md:text-gray-100 pb-1  md:text-left text-center">
             Kami bisa bantu <br /> untuk membuat <br /> Projects 
           </h1>
-          <p className="text-base text-[#F6F6F6] md:text-lg">
+          <p className="text-base text-[#F6F6F6] md:text-lg md:text-left text-center md:items-start items-center ">
   Manfaatkan kekuatan pengembangan full stack bersama kami!
   <br className="hidden md:block" /> Kami menyediakan platform paling andal bagi pengembang 
     <br className="hidden md:block" />  dan bisnis untuk mengelola proyek Anda, melacak kemajuan, 
@@ -163,7 +182,7 @@ const Navbar = () => {
             alt="Example"
             width={350}
             height={280}
-            className="rounded-2xl shadow-md md:w-[500px] md:h-[400px]"
+            className="rounded-2xl shadow-md md:w-[500px] md:h-[400px] "
           />
         </motion.div>
       </div>
@@ -176,7 +195,7 @@ const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:px-6 border-black ">
+      <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:px-6 border-black text-center md:text-left">
         <q>
           Saya bisa menulis: js, ts, tailwind,
           <br className="hidden md:block" /> HTML, CSS, React, prismaORM, shadCn ui, MySQL.
@@ -192,8 +211,8 @@ const Navbar = () => {
           className="rounded-full md:w-20 md:h-20"
         />
         <div>
-          <p className="text-[#1E1F24] font-semibold text-sm md:text-base">Muhammad Rachman</p>
-          <p className="text-[#1E1F24] text-sm md:text-base">My Experience</p>
+          <p className="text-[#1E1F24] font-semibold text-sm md:text-base">Muhammad Rachman </p>
+          <p className="text-[#1E1F24] text-sm md:text-base">My Experience </p>
         </div>
       </div>
     </motion.div>
@@ -223,27 +242,54 @@ const Navbar = () => {
           <div className="space-y-20">
  
   { /* Page 2 */ }
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full">
-  <div
-    className="relative rounded-xl bg-cover bg-no-repeat w-full h-[300px] md:w-[600px] md:h-[600px]"
-    style={{
-      marginInline: "0",
-      backgroundImage:
-        "url(https://th.bing.com/th/id/R.c4580930a1b10329e559757c9d7c4b5d?rik=DwAvzSSeJa3zLw&riu=http%3a%2f%2fwww.kranse.com%2fcdn%2fshop%2farticles%2ftips_for_test_anxiety_and_sat_1024x1024.jpg%3fv%3d1509392551&ehk=%2f5GsVQ4%2fn51EVdTTANIhFNEby5hgMWkitSe8QbwO2js%3d&risl=&pid=ImgRaw&r=0)",
-      borderRadius: "28px",
-      paddingBlock: "32px",
-      gridColumn: "1 / 2", // Adapt to one column on mobile
-      gridRow: "1 / 2",
-    }}
-  >
-    <div className="absolute bg-black/50 text-white flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[25px] md:right-[25px] w-24 h-16 md:w-36 md:h-24 border-white border-[1px]">
-      <div className="flex justify-center text-xs md:text-base">
-        1 Years <br /> Pengalaman <br /> Coding ux
-      </div>
-    </div>
-  </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full ">
+            <Box
+      className="relative rounded-xl w-full h-[300px] md:w-[600px] md:h-[600px] overflow-hidden"
+      sx={{
+        borderRadius: "28px",
+        marginInline: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        position: "relative",
+      }}
+    >
+      {/* Framer Motion for smooth transitions */}
+      <motion.div
+        key={currentIndex}
+        // initial={{ opacity: 0, x: 100 }}
+        // animate={{ opacity: 1, x: 0 }}
+        // exit={{ opacity: 0, x: -100 }}
+        // transition={{ duration: 0.5 }}
+        className="absolute w-full h-full bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url(${images[currentIndex]})`,
+        }}
+      />
 
-  <div className="flex flex-col justify-center space-y-4 px-4 md:px-12">
+      {/* Text overlay */}
+      <div className="absolute bg-black/50 text-gray-100 flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-36 md:h-24 border-white border-[1px] backdrop-blur-sm">
+        <div className="flex justify-center text-xs md:text-base">
+          1 Years <br /> Pengalaman <br /> Coding ux
+        </div>
+      </div>
+
+      {/* Carousel controls */}
+      <button
+        onClick={handlePrev}
+        className="absolute left-4 bottom-3 transform bg-black/60 p-2 rounded-full backdrop-blur-sm border-white border-[1px] text-gray-100"
+      >
+        Prev
+      </button>
+      <button
+        onClick={handleNext}
+        className="absolute right-4 bottom-3 transform bg-black/60 p-2 rounded-full backdrop-blur-sm  border-white border-[1px] text-gray-100"
+      >
+        Next
+      </button>
+    </Box>
+
+  <div className="flex flex-col justify-center space-y-4 px-4 md:px-12 md:text-left text-center items-center md:items-start">
     <p className="uppercase text-xs md:text-sm">Tentang Kami </p>
     <h1 className="text-2xl md:text-4xl">
       Kelola proyek <br /> dengan mudah dengan kami  <br /> Kembangkan keahlian anda 
