@@ -199,7 +199,7 @@ const Navbar = () => {
     </motion.div>
 
     {/* Partners */}
-    <div className="mt-8 max-w-full mx-auto flex flex-wrap justify-center gap-4 md:gap-6 md:mt-10 md:max-w-2xl">
+    <div className="mt-8 max-w-full mx-2 flex flex-wrap justify-center gap-4 md:gap-6 md:mt-10 md:max-w-2xl">
       <div className="bg-[#F6F6F6] px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
         LinkedIn
       </div>
