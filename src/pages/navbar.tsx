@@ -195,7 +195,7 @@ const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:px-6 border-black text-center md:text-left">
+      <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:pr-6 border-black text-center md:text-left">
         <q>
           Saya bisa menulis: js, ts, tailwind,
           <br className="hidden md:block" /> HTML, CSS, React, prismaORM, shadCn ui, MySQL.
