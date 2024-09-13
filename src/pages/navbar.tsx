@@ -248,7 +248,7 @@ const Navbar = () => {
       Kelola proyek <br /> dengan mudah dengan kami  <br /> Kembangkan keahlian anda 
     </h1>
     <p className="mt-2 md:mt-4 text-sm md:text-base">
-    Kami adalah tempat paling terpercaya bagi pengembang dan bisnis untuk
+    rohmanDev adalah tempat paling terpercaya bagi pengembang dan bisnis untuk
       mengelola proyek Anda, melacak kemajuan, dan
       menerapkan aplikasi dengan lancar.
      </p>
@@ -345,8 +345,9 @@ const Navbar = () => {
     animate={{ opacity: 1 }}
     transition={{ duration: 1, delay: 0.5 }}
   >
-    We're the most trusted place for people and businesses to track all
-    of your account balances, transactions, etc.
+    rohmanDev adalah tempat paling terpercaya dari seberapa kalangan komunitas pengembang dan bisnis untuk
+  melacak semua proyek yang diperlukan, mengelola kemajuan, menerapkan aplikasi dengan lancar, 
+  dan merencanakan Impinan sesuai keinginan Anda. 
   </motion.p>
   <motion.button
     className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36"
