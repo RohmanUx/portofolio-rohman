@@ -374,7 +374,7 @@ const Navbar = () => {
 </div> 
 
 <div> 
-<div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-0 md:px-0 lg:px-0"> 
+<div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0"> 
   {/* Contact us Page 4  */}
   <div className="h-[600px] flex justify-center flex-col items-center"> 
   <motion.h1
@@ -409,7 +409,7 @@ const Navbar = () => {
     transition={{ duration: 1.5 }}
   >
     business with me!!
-  </motion.p> </div> 
+  </motion.p> </div>  </div> 
   {/* Footer page 5 */}
   <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44">
   <p className="text-xs md:text-sm text-center md:text-left mb-2 md:mb-0">
@@ -431,7 +431,7 @@ const Navbar = () => {
   </div>
   </div>
 
-    </div> 
+   
     </div> 
     </div> { " " } 
     </div>
