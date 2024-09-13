@@ -177,9 +177,9 @@ const Navbar = () => {
     >
       <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:px-6 border-black ">
         <q>
-          I can't. js, ts, tailwind,
+          Saya bisa menulis: js, ts, tailwind,
           <br className="hidden md:block" /> HTML, CSS, React, prismaORM, shadCn ui, MySQL.
-          <br className="hidden md:block" /> Use to planning project
+          <br className="hidden md:block" /> Digunakan untuk membuat web 
         </q>
       </p>
       <div className="flex items-center gap-4">
@@ -237,7 +237,7 @@ const Navbar = () => {
   >
     <div className="absolute bg-black/50 text-white flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[25px] md:right-[25px] w-24 h-16 md:w-36 md:h-24 border-white border-[1px]">
       <div className="flex justify-center text-xs md:text-base">
-        2 Years <br /> on Experience <br /> Coding UX
+        2 Years <br /> Pengalaman di <br /> Coding ux
       </div>
     </div>
   </div>
