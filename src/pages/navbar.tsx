@@ -138,13 +138,13 @@ const Navbar = () => {
             So why <BiQuestionMark className="text-xl flex items-center h-full  text-[#F6F6F6] "/> 
           </p>
           <h1 className="text-3xl font-bold text-[#F6F6F6] md:text-4xl md:text-gray-100">
-            I Can Help You <br /> to Create <br /> Projects
+            Saya bisa bantu <br /> untuk membuat <br /> Projects modern 
           </h1>
           <p className="text-base text-[#F6F6F6] md:text-lg">
-            We're the most trusted place for people and businesses to
-            <br className="hidden md:block" /> track all of your account balances, transactions, and
-            <br className="hidden md:block" /> investments in one place.
-          </p>
+  Manfaatkan kekuatan pengembangan full stack bersama kami!
+  <br className="hidden md:block" /> Kami menyediakan platform paling andal bagi pengembang dan bisnis untuk
+  <br className="hidden md:block" /> mengelola proyek Anda, melacak kemajuan, dan menerapkan aplikasi dengan lancar.
+</p>
           <button className="bg-[#F6F6F6] py-2 rounded-full hover:bg-blue-400 transition-colors text-[#1E1F24] w-32 md:w-40">
             My Certificate
           </button>
