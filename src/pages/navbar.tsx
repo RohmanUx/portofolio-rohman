@@ -350,7 +350,7 @@ const Navbar = () => {
   dan merencanakan Impinan sesuai keinginan Anda. 
   </motion.p>
   <motion.button
-    className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36 md:mt-2 mt-2"
+    className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36 md:mt-2 mt-1"
     whileHover={{ scale: 1.1 }}
     transition={{ type: "spring", stiffness: 300 }}
   >
