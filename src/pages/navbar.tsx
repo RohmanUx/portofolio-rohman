@@ -190,12 +190,12 @@ const Navbar = () => {
 
     {/* Quote and Experience */}
     <motion.div
-      className="mt-8 max-w-full p-4 bg-[#F6F6F6] rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-6 mx-4"
+      className="mt-8 max-w-full p-4 bg-[#F6F6F6] rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-6 mx-4 md:px-9"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-    >
-      <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:pr-6 border-black text-center md:text-left">
+    > 
+            <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:pr-6 border-black text-center md:text-left">
         <q>
           Saya bisa menulis: js, ts, tailwind,
           <br className="hidden md:block" /> HTML, CSS, React, prismaORM, shadCn ui, MySQL.
@@ -214,7 +214,7 @@ const Navbar = () => {
           <p className="text-[#1E1F24] font-semibold text-sm md:text-base">Muhammad Rachman </p>
           <p className="text-[#1E1F24] text-sm md:text-base">My Experience </p>
         </div>
-      </div>
+      </div> 
     </motion.div>
 
     {/* Partners */}
