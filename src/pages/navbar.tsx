@@ -262,11 +262,9 @@ const Navbar = () => {
             <div className="space-y-20">
   <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-24">
     <h1 className="text-4xl text-white mb-4 md:text-5xl">
-      I Can't solve some Project problems
-    </h1>
-    <p className="text-white md:text-lg">
-      It's so Important to modern web next Generation
-    </p>
+     Saya bisa meperbaiki seberapa masalah project sesuai keingian anda    </h1>
+    <p className="text-white md:text-lg"> 
+      itu sangatlah penting untuk web modern generasi selanjutnya     </p> 
 
     {/* Icon grid */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
