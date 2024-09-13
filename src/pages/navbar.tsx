@@ -245,13 +245,13 @@ const Navbar = () => {
   <div className="flex flex-col justify-center space-y-4 px-4 md:px-12">
     <p className="uppercase text-xs md:text-sm">About me </p>
     <h1 className="text-2xl md:text-4xl">
-      Easily manage Your <br /> Project & grow <br /> Money
+      Kelola proyek <br /> dengan mudah dengan kami  <br /> Kembangkan keahlian anda 
     </h1>
     <p className="mt-2 md:mt-4 text-sm md:text-base">
-      We're the most trusted place for people and businesses to
-      track all of your account balances, transactions, and
-      investments in one place.
-    </p>
+    Kami adalah tempat paling terpercaya bagi pengembang dan bisnis untuk
+      mengelola proyek Anda, melacak kemajuan, dan
+      menerapkan aplikasi dengan lancar.
+     </p>
     <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40">
       My Portfolio
     </button>
