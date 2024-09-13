@@ -336,8 +336,8 @@ const Navbar = () => {
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
-  >
-    Siap untuk memulai <br /> Pengalaman baru 
+  > 
+    Siap untuk memulai <br /> pengalaman baru 
   </motion.h1>
   <motion.p
     className="pb-3 text-center text-sm md:text-base"
