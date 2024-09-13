@@ -109,7 +109,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul> 
-        <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-4">
+        <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
           <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-600 transition-colors border-[1px] border-black">
             Meeting
           </button>
@@ -137,13 +137,14 @@ const Navbar = () => {
           <p className="text-base bg-[#535c47] py-1 border-[#F6F6F6] border-[1px] w-28 md:text-lg md:w-28 flex justify-center items-center rounded-full text-[#F6F6F6] ">
             So why <BiQuestionMark className="text-xl flex items-center h-full  text-[#F6F6F6] "/> 
           </p>
-          <h1 className="text-3xl font-bold text-[#F6F6F6] md:text-4xl md:text-gray-100">
-            Saya bisa bantu <br /> untuk membuat <br /> Projects modern 
+          <h1 className="text-3xl font-medium text-[#F6F6F6] md:text-4xl md:text-gray-100 pb-1">
+            Kami bisa bantu <br /> untuk membuat <br /> Projects 
           </h1>
           <p className="text-base text-[#F6F6F6] md:text-lg">
   Manfaatkan kekuatan pengembangan full stack bersama kami!
-  <br className="hidden md:block" /> Kami menyediakan platform paling andal bagi pengembang dan bisnis untuk
-  <br className="hidden md:block" /> mengelola proyek Anda, melacak kemajuan, dan menerapkan aplikasi dengan lancar.
+  <br className="hidden md:block" /> Kami menyediakan platform paling andal bagi pengembang 
+    <br className="hidden md:block" />  dan bisnis untuk mengelola proyek Anda, melacak kemajuan, 
+  <br className="hidden md:block" />  dan menerapkan aplikasi dengan lancar.
 </p>
           <button className="bg-[#F6F6F6] py-2 rounded-full hover:bg-blue-400 transition-colors text-[#1E1F24] w-32 md:w-40">
             My Certificate
@@ -199,19 +200,19 @@ const Navbar = () => {
 
     {/* Partners */}
     <div className="mt-8 max-w-full mx-auto flex flex-wrap justify-center gap-4 md:gap-6 md:mt-10 md:max-w-2xl">
-      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+      <div className="bg-[#F6F6F6] px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
         LinkedIn
       </div>
-      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+      <div className="bg-[#F6F6F6] px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
         JobSeek
       </div>
-      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+      <div className="bg-[#F6F6F6] px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
         Jooble
       </div>
-      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+      <div className="bg-[#F6F6F6] px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
         Glints
       </div>
-      <div className="bg-[#F6F6F6] px-3 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+      <div className="bg-[#F6F6F6] px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
         Deals
       </div>
     </div>
@@ -261,8 +262,9 @@ const Navbar = () => {
     { /* Page 3 */ }
             <div className="space-y-20">
   <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-24">
-    <h1 className="text-4xl text-white mb-4 md:text-5xl">
-     Saya bisa meperbaiki seberapa masalah project sesuai keingian anda    </h1>
+    <p className="text-4xl text-white mb-4 md:text-5xl md:w-[700px]">
+     Saya bisa meperbaiki seberapa masalah project 
+     sesuai keingian anda    </p> 
     <p className="text-white md:text-lg"> 
       itu sangatlah penting untuk web modern generasi selanjutnya     </p> 
 
@@ -277,7 +279,7 @@ const Navbar = () => {
       >
         <FaCode size={40} className="text-blue-500" />
         <div className="mt-6 text-center">
-          <div className="font-semibold">Front End</div>
+          <div className="font-semibold">Front End </div>
           <div className="text-sm mt-2">
             I can Redux, React hooks, HTML, CSS, Tailwind CSS, Next.js, and
             React. I'm skilled in building modern, responsive web applications
@@ -294,7 +296,7 @@ const Navbar = () => {
       >
         <FaDatabase size={40} className="text-red-500" />
         <div className="mt-6 text-center">
-          <div className="font-semibold">Back End</div>
+          <div className="font-semibold">Back End </div>
           <div className="text-sm mt-2">
             I can work with Prisma, MySQL, Express, and Node.js. I’m experienced
             in developing robust back-end systems and managing databases.
@@ -311,7 +313,7 @@ const Navbar = () => {
       >
         <FaPencilRuler size={40} className="text-orange-500" />
         <div className="mt-6 text-center">
-          <div className="font-semibold">Interest</div>
+          <div className="font-semibold">Interest </div>
           <div className="text-sm mt-2">
             I want to learn MongoDB, Svelte, Material UI, Framer Motion, color
             palette, and Sass. I'm interested in expanding my skills in modern
@@ -335,10 +337,10 @@ const Navbar = () => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
   > 
-    Siap untuk memulai <br /> pengalaman baru 
+    Siap untuk memulai <br /> pengalaman baru  
   </motion.h1>
   <motion.p
-    className="pb-3 text-center text-sm md:text-base"
+    className="pb-3 text-center text-sm md:text-base md:w-[800px]"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1, delay: 0.5 }}
@@ -348,14 +350,14 @@ const Navbar = () => {
   dan merencanakan Impinan sesuai keinginan Anda. 
   </motion.p>
   <motion.button
-    className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36"
+    className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36 md:mt-2 mt-2"
     whileHover={{ scale: 1.1 }}
     transition={{ type: "spring", stiffness: 300 }}
   >
     Contact email
   </motion.button>
   <motion.p
-    className="text-gray-700 text-[60px] md:text-[120px] shadow-black text-shadow mt-4 md:mt-6"
+    className="text-gray-700 text-[60px] md:text-[120px] shadow-black text-shadow mt-4 md:mt-6 justify-center flex items-center text-center"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1.5 }}
