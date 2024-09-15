@@ -435,7 +435,7 @@ const Navbar = () => {
                 transition={{ duration: 1.5 }}
               >
                 <div className="relative text-center ">
-                                    <h1 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 via-clr-2 to-clr-3 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-sans">
+                                    <h1 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 to-clr-2 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-sans">
                     Berminat!! 
                   </h1>
 
