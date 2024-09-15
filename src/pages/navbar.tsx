@@ -319,7 +319,7 @@ const Navbar = () => {
 
             {/* Page 3 */}
             <div className="space-y-20">
-              <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-24">
+              <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-40">
                 <p className="text-4xl text-white mb-4 md:text-5xl md:w-[700px]">
                   Saya bisa meperbaiki seberapa masalah project sesuai keingian
                   anda { " " }
