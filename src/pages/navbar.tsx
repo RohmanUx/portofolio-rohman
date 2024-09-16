@@ -49,7 +49,7 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         >
           <div>
-            <h1 className="text-2xl sm:text-2xl font-medium text-gray-900 ml-2 bg-gray-200 px-1 py-1">
+            <h1 className="text-2xl sm:text-2xl font-medium text-gray-900 ml-2 ">
               rohman.<span className=" text-orange-700 font-medium">dev </span>
             </h1>
           </div>
