@@ -49,8 +49,8 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         >
           <div>
-            <h1 className="text-2xl sm:text-2xl font-medium text-gray-800 ml-2">
-              rohman<span className=" text-orange-800">Dev</span>
+            <h1 className="text-2xl sm:text-2xl font-medium text-gray-900 ml-2 bg-gray-200 px-1 py-1">
+              rohman.<span className=" text-orange-700 font-medium">dev </span>
             </h1>
           </div>
           <div className="hidden md:flex items-center">
@@ -73,10 +73,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ">
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-600 transition-colors border-[1px] border-black">
+            <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-600 transition-colors border-[1px] border-black/50">
               Meeting
             </button>
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-600 transition-colors border-[1px] border-black">
+            <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-600 transition-colors border-[1px] border-black/50">
               Contract
             </button>
           </div>
@@ -157,13 +157,13 @@ const Navbar = () => {
                 transition={{ duration: 0.5 }}
               >
                 <p className="text-base bg-[#535c47] py-1 border-[#F6F6F6] border-[1px] w-28 md:text-lg md:w-28 flex justify-center items-center rounded-full text-[#F6F6F6] ">
-                  So why{" "}
+                  So why { " " }  
                   <BiQuestionMark className="text-xl flex items-center h-full  text-[#F6F6F6] " />
                 </p>
-                <h1 className="text-3xl font-medium text-[#F6F6F6] md:text-4xl md:text-gray-100 pb-1  md:text-left text-center">
-                  Kami bisa bantu <br /> untuk membuat <br /> Projects
+                <h1 className="text-3xl font-medium text-[#F6F6F6] md:text-4xl md:text-gray-100 py-1  md:text-left text-center">
+                  Saya bisa bantu <br /> untuk membuat <br /> Projects
                 </h1>
-                <p className="text-base text-[#F6F6F6] md:text-lg md:text-left text-center md:items-start items-center ">
+                <p className="text-base text-green-100 md:text-lg md:text-left text-center md:items-start items-center ">
                   Manfaatkan kekuatan pengembangan full stack bersama kami!
                   <br className="hidden md:block" /> Kami menyediakan platform
                   paling andal bagi pengembang
@@ -204,10 +204,10 @@ const Navbar = () => {
           >
             <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:pr-6 border-black text-center md:text-left">
               <q>
-                Saya bisa menulis: js, ts, tailwind,
+                dgn menulis: js, ts, tailwind,
                 <br className="hidden md:block" /> HTML, CSS, React, prismaORM,
                 shadCn ui, MySQL.
-                <br className="hidden md:block" /> Digunakan untuk membuat web
+                <br className="hidden md:block" /> bisa di pakai untuk membuat web
               </q>
             </p>
             <div className="flex items-center gap-4">
@@ -220,10 +220,10 @@ const Navbar = () => {
               />
               <div>
                 <p className="text-[#1E1F24] font-semibold text-sm md:text-base">
-                  Muhammad Rachman{" "}
+                  Muhammad Rachman { " " }
                 </p>
                 <p className="text-[#1E1F24] text-sm md:text-base">
-                  My Experience{" "}
+                  My Experience { " " }
                 </p>
               </div>
             </div>
@@ -301,13 +301,13 @@ const Navbar = () => {
               </Box>
 
               <div className="flex flex-col justify-center space-y-4 px-4 md:px-12 md:text-left text-center items-center md:items-start">
-                <p className="uppercase text-xs md:text-sm border-black border-[1px] py-2 px-3 rounded-full xl:mt-0 mt-2">Tentang Web</p>
-                <h1 className="text-2xl md:text-4xl">
-                  Kelola proyek <br /> dengan mudah dengan rohmanDev <br />{" "}
+                <p className="uppercase text-xs md:text-sm border-black border-[1px] py-2 px-3 rounded-full xl:mt-0 mt-2">Tentang Web </p>
+                <h1 className="text-2xl md:text-4xl py-1">
+                  Kelola proyek <br /> dengan mudah dengan rohman.dev <br /> { " " }
                   Kembangkan keahlian anda
                 </h1>
-                <p className="mt-2 md:mt-4 text-sm md:text-base">
-                  rohmanDev adalah tempat paling terpercaya bagi pengembang dan
+                <p className="pb-1 md:mt-4 text-sm md:text-base">
+                  rohman.dev adalah tempat baru memulai pengembangan dan 
                   bisnis untuk mengelola proyek Anda, melacak kemajuan, dan
                   menerapkan aplikasi dengan lancar.
                 </p>
@@ -320,19 +320,19 @@ const Navbar = () => {
             {/* Page 3 */}
             <div className="space-y-20">
               <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-40">
-                <p className="text-4xl text-white mb-4 md:text-5xl md:w-[700px]">
-                  Saya bisa meperbaiki seberapa masalah project sesuai keingian
+                <p className="text-4xl text-white mb-7 md:text-5xl md:w-[700px]">
+                rohman.dev bisa membantu seberapa masalah project sesuai keingian
                   anda { " " }
                 </p>
-                <p className="text-white md:text-lg">
-                  itu sangatlah penting untuk web modern generasi selanjutnya{" "}
+                <p className="text-green-100 md:text-lg mb-1">
+                  itu sangatlah penting untuk membuat sekala web modern generasi selanjutnya { " " }   
                 </p>
 
                 {/* Icon grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
                   {/* Front End */}
                   <motion.div
-                    className="bg-[#e0f7fa] text-black rounded-lg p-4 flex flex-col items-center"
+                    className="bg-[#e0f7fa] text-black rounded-xl p-4 flex flex-col items-center"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -350,7 +350,7 @@ const Navbar = () => {
 
                   {/* Back End */}
                   <motion.div
-                    className="bg-[#ffebee] text-black rounded-lg p-4 flex flex-col items-center"
+                    className="bg-[#ffebee] text-black rounded-xl p-4 flex flex-col items-center"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -368,7 +368,7 @@ const Navbar = () => {
 
                   {/* UI & UX */}
                   <motion.div
-                    className="bg-[#fff3e0] text-black rounded-lg p-4 flex flex-col items-center"
+                    className="bg-[#fff3e0] text-black rounded-xl p-4 flex flex-col items-center"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -392,11 +392,11 @@ const Navbar = () => {
 
         <div> 
 
-          <div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0">
+          <div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0 ">
           
         <button 
         onClick={scrollToSection}
-        className="fixed lg:bottom-12 lg:right-28 right-5 bottom-5 bg-gray-900/60 text-white/90 p-1 lg:p-2 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-600/80 focus:outline-none z-20 backdrop-blur-xl border-gray-800 border-[1px] "
+        className="fixed lg:bottom-12 lg:right-28 right-5 bottom-5 bg-gray-200/60 text-gray-900/90 p-1 lg:p-1 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-400/60 focus:outline-none z-20 backdrop-blur-3xl border-gray-900/90 border-[1px] "
       >
         <ArrowUpIcon className="w-6 h-6" />
       </button> 
@@ -408,7 +408,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
-                Saya siap memulai <br /> pengalaman baru
+                Jadi mungkin siap memulai <br /> pengalaman baru #
               </motion.h1>
               <motion.p
                 className="pb-3 text-center text-sm md:text-base md:w-[800px]"
@@ -416,15 +416,11 @@ const Navbar = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
               >
-                rohmanDev adalah tempat paling terpercaya dari seberapa kalangan
-                komunitas pengembang dan bisnis untuk melacak semua proyek yang
-                diperlukan, mengelola kemajuan, menerapkan aplikasi dengan
-                lancar, dan merencanakan Impinan sesuai keinginan Anda.
-              </motion.p>
+                rohman.dev adalah tempat baru memulai pengembangan dan bisnis untuk mengelola proyek Anda, melacak kemajuan, dan menerapkan aplikasi dengan lancar.              </motion.p>
               <motion.button
                 className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36 md:mt-2 mt-1"
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: "spring", stiffness: 900 }}
               >
                 Contact email
               </motion.button>
