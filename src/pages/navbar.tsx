@@ -288,13 +288,13 @@ const Navbar = () => {
                 { /* Carousel controls */ }
                 <button
                   onClick={handlePrev}
-                  className="absolute right-16 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
+                  className="absolute right-16 bottom-2 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
                 >
                   &lt; 
                 </button> 
                 <button
                   onClick={handleNext}
-                  className="absolute right-4 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm  border-white/40 border-[1px] text-green-100 flex justify-center text-center"
+                  className="absolute right-4 bottom-2 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm  border-white/40 border-[1px] text-green-100 flex justify-center text-center"
                 > 
                  &gt; 
                 </button>
