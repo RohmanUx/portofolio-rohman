@@ -403,7 +403,7 @@ const Navbar = () => {
             {/* Contact us Page 4  */}
             <div className="h-[600px] flex justify-center flex-col items-center">
               <motion.h1
-                className="text-center text-[32px] md:text-[48px] pb-2 md:pb-4"
+                className="text-center text-[32px] md:text-[48px] pb-1 md:pb-1"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -432,7 +432,7 @@ const Navbar = () => {
               >
                 <div className="relative text-center ">
                                     <h1 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 via-clr-2 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-sans">
-                    rohman.dev!! 
+                   berminat!! 
                   </h1>
 
                   {/* Subtext */}
