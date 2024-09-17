@@ -7,6 +7,7 @@ import { useState } from "react";
 import { BiQuestionMark } from "react-icons/bi";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from '@radix-ui/react-icons'; // Import Radix UI icon
+import LiveChat from "./liveChat";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -154,7 +155,7 @@ const Navbar = () => {
                   So why { " " }  
                   <BiQuestionMark className="text-xl flex items-center h-full  text-[#F6F6F6] " />
                 </p>
-                <h1 className="text-3xl font-normal text-[#F6F6F6] md:text-4xl md:text-gray-100 py-1  md:text-left text-center">
+                <h1 className="text-3xl font-medium text-[#F6F6F6] md:text-4xl md:text-gray-100 py-1  md:text-left text-center">
                   Saya bisa bantu <br /> untuk membuat <br /> Projects
                 </h1>
                 <p className="text-base text-green-100 md:text-lg md:text-left text-center md:items-start items-center ">
@@ -387,13 +388,13 @@ const Navbar = () => {
         <div> 
 
           <div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0 ">
-          
         <button 
         onClick={scrollToSection}
         className="fixed lg:bottom-12 lg:right-28 right-5 bottom-5 bg-gray-200/60 text-gray-900/90 p-1 lg:p-1 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-400/60 focus:outline-none z-20 backdrop-blur-3xl border-gray-900/90 border-[1px] "
       >
         <ArrowUpIcon className="w-6 h-6" />
       </button> 
+       <LiveChat /> 
             {/* Contact us Page 4  */}
             <div className="h-[600px] flex justify-center flex-col items-center">
               <motion.h1

@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import AboutPage from "./pages/about"; 
+import AboutPage from "./pages/liveChat"; 
 import ContactPage from "./pages/contact";
 import LandingPage from './pages/landing';
 import Navbar from './pages/navbar'; 
