@@ -443,7 +443,7 @@ const Navbar = () => {
           {/* Footer page 5 */}
           <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44">
             <p className="text-xs md:text-sm text-center md:text-left mb-2 md:mb-0">
-              ©2024 rohmanDev, All rights reserved
+              ©2024 rohman.dev, All rights reserved
             </p>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
               <motion.p
