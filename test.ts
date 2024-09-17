@@ -100,3 +100,8 @@
 // inheritance class objectClass classObject 
 // undifined null infinity 
 // nan: jika output berbda jika number output dipakai string text, kecuali ada tool lain maka error bukan nan 
+
+
+// NEW STATE KNOW #### 
+// setName = new value (tambah / kurang di prev next)
+// setName = name (reset) 

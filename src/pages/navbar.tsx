@@ -18,15 +18,15 @@ const Navbar = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = ()  => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
-
+ 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
-  };
+  }; 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -50,33 +50,33 @@ const Navbar = () => {
         >
           <div>
             <h1 className="text-2xl sm:text-2xl font-medium text-gray-900 ml-2 ">
-              rohman.<span className=" text-orange-700 font-medium">dev </span>
+              rohman.<span className=" text-blue-900 font-medium">dev </span>
             </h1>
           </div>
           <div className="hidden md:flex items-center">
             <ul className="flex list-none gap-6 sm:gap-8 md:gap-12 font-normal text-base sm:text-lg md:text-xl">
               <li>
-                <Link to="/" className="hover:text-blue-500 transition-colors">
+                <Link to="/" className="hover:text-gray-900/80 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-blue-500 transition-colors">
+                <Link to="/" className="hover:text-gray-900/80 transition-colors">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-blue-500 transition-colors">
+                <Link to="/" className="hover:text-gray-900/80 transition-colors">
                   Help
                 </Link>
               </li>
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ">
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-600 transition-colors border-[1px] border-black/50">
+            <button className="bg-[#F6F6F6] text-[#1E1F24] py-0 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
               Meeting
             </button>
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-1 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-600 transition-colors border-[1px] border-black/50">
+            <button className="bg-[#F6F6F6] text-[#1E1F24] py-0 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
               Contract
             </button>
           </div>
@@ -135,10 +135,10 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-600 transition-colors border-[1px] border-black">
+            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-400 transition-colors border-[1px] border-black">
               Meeting
             </button>
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-600 transition-colors border-[1px] border-black">
+            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black">
               Contract
             </button>
           </div>
@@ -202,7 +202,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-sm text-[#1E1F24] md:text-lg italic border-r-0 md:border-r-2 px-0 md:pr-6 border-black text-center md:text-left">
+            <p className="text-sm text-[#1E1F24] md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/40 text-center md:text-left">
               <q>
                 dgn menulis: js, ts, tailwind,
                 <br className="hidden md:block" /> HTML, CSS, React, prismaORM,
@@ -279,7 +279,7 @@ const Navbar = () => {
                 />
 
                 {/* Text overlay */}
-                <div className="absolute bg-black/50 text-gray-100 flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-36 md:h-24 border-white border-[1px] backdrop-blur-sm">
+                <div className="absolute bg-black/50 text-green-100 flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/40 border-[1px] backdrop-blur-sm">
                   <div className="flex justify-center text-xs md:text-base">
                     1 Years <br /> Pengalaman <br /> Coding ux
                   </div>
@@ -288,15 +288,15 @@ const Navbar = () => {
                 {/* Carousel controls */}
                 <button
                   onClick={handlePrev}
-                  className="absolute left-4 bottom-3 transform bg-black/60 p-2 rounded-full backdrop-blur-sm border-white border-[1px] text-gray-100"
+                  className="absolute right-16 bottom-3 transform bg-black/60 p-2 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
                 >
-                  Prev
+                  p
                 </button>
                 <button
                   onClick={handleNext}
-                  className="absolute right-4 bottom-3 transform bg-black/60 p-2 rounded-full backdrop-blur-sm  border-white border-[1px] text-gray-100"
+                  className="absolute right-4 bottom-3 transform bg-black/60 p-2 rounded-full backdrop-blur-sm  border-white/40 border-[1px] text-green-100"
                 >
-                  Next
+              n 
                 </button>
               </Box>
 
@@ -337,7 +337,7 @@ const Navbar = () => {
                     initial="hidden"
                     animate="visible"
                   >
-                    <FaCode size={40} className="text-blue-500" />
+                    <FaCode size={40} className="text-blue-500/90" />
                     <div className="mt-6 text-center">
                       <div className="font-semibold">Front End </div>
                       <div className="text-sm mt-2">
@@ -355,7 +355,7 @@ const Navbar = () => {
                     initial="hidden"
                     animate="visible"
                   >
-                    <FaDatabase size={40} className="text-red-500" />
+                    <FaDatabase size={40} className="text-red-500/90" />
                     <div className="mt-6 text-center">
                       <div className="font-semibold">Back End </div>
                       <div className="text-sm mt-2">
@@ -373,7 +373,7 @@ const Navbar = () => {
                     initial="hidden"
                     animate="visible"
                   >
-                    <FaPencilRuler size={40} className="text-orange-500" />
+                    <FaPencilRuler size={40} className="text-orange-500/90" />
                     <div className="mt-6 text-center">
                       <div className="font-semibold">Interest </div>
                       <div className="text-sm mt-2">
