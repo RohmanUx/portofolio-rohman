@@ -1,22 +1,33 @@
+// components/CrispChat.tsx
+
 import { useEffect } from 'react';
 
-const LiveChat = () => {
+const CrispChat: React.FC = () => {
   useEffect(() => {
-    // Replace with your actual chat widget script (for example, from Intercom, Tawk.to, etc.)
+    // Create a script element and add it to the document
     const script = document.createElement('script');
-    script.src = "https://embed.tawk.to/YOUR_TAWK_ID/default";
+    script.type = 'text/javascript';
+    script.src = 'https://client.crisp.chat/l.js';
     script.async = true;
-    script.charset = "UTF-8";
-    script.setAttribute('crossorigin', '*');
-    document.body.appendChild(script);
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+    // Set Crisp website ID
+    const crispSettings = document.createElement('script');
+    crispSettings.type = 'text/javascript';
+    crispSettings.innerHTML = `
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "ab2176a0-a3fa-4b73-9100-320621bfde0f";
+    `;
+    document.head.appendChild(crispSettings);
 
     // Clean up the script when the component unmounts
     return () => {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
+      document.head.removeChild(crispSettings);
     };
   }, []);
 
-  return null; // No JSX needed as the script handles rendering
+  return null 
 };
 
-export default LiveChat;
+export default CrispChat;

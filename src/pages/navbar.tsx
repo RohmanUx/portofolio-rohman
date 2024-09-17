@@ -41,7 +41,7 @@ const Navbar = () => {
   
   return (
     <div>
-      {/*navbar*/}
+      { /*navbar*/ }
       <div>
         <motion.div
           className="fixed top-0 left-0 w-full py-1 flex items-center justify-between bg-[#FFF] bg-opacity-60 backdrop-blur-lg shadow-md z-50 px-4 sm:px-8 md:px-16 lg:px-[138px]"
@@ -74,7 +74,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ">
-                        <button className="bg-[#F6F6F6] text-[#1E1F24] py-0 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
+                        <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
               Contract
             </button>
           </div>
@@ -190,7 +190,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Quote and Experience */}
+          { /* Quote and Experience */ }
           <motion.div
             className="mt-8 max-w-full p-4 bg-[#F6F6F6] rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 "
             initial={{ opacity: 0, y: 50 }}
@@ -246,7 +246,8 @@ const Navbar = () => {
       </div>
       <div className="space-y-20">
         <div className="space-y-20">
-          <div className="space-y-20">
+          <div className="space-y-20"> 
+          
             {/* Page 2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full ">
               <Box
@@ -386,7 +387,7 @@ const Navbar = () => {
         </div>
 
         <div> 
-
+        
           <div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0 ">
         <button 
         onClick={scrollToSection}
@@ -394,8 +395,7 @@ const Navbar = () => {
       >
         <ArrowUpIcon className="w-6 h-6" />
       </button> 
-       <LiveChat /> 
-            {/* Contact us Page 4  */}
+                  {/* Contact us Page 4  */}
             <div className="h-[600px] flex justify-center flex-col items-center">
               <motion.h1
                 className="text-center text-[32px] md:text-[48px] pb-1 md:pb-1"
@@ -456,7 +456,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div> { " " }  
     </div> 
   );
 }; 

@@ -103,7 +103,9 @@
 
 
 // NEW STATE KNOW #### 
-// setName = new value (tambah / kurang di prev next)
+// setName = new value (tambah + / - kurang di prev next)
 // setName = name (reset) 
-// setName / name = data object 
+// setName / name = (isi) data object 
 
+// useCallback / useMemo = button 
+// [id] di callback bisa ulang ${id} tanpa referesh seluruh browser / sedikit efect jadi bisa manual di ulang  
