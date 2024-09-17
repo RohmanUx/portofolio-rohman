@@ -288,7 +288,7 @@ const Navbar = () => {
                 {/* Carousel controls */}
                 <button
                   onClick={handlePrev}
-                  className="absolute right-20 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
+                  className="absolute md:right-20 right-16 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
                 >
                   &lt; 
                 </button> 
