@@ -288,13 +288,13 @@ const Navbar = () => {
                 { /* Carousel controls */ }
                 <button
                   onClick={handlePrev}
-                  className="absolute right-16 bottom-2 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
+                  className="absolute right-16 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
                 >
                   &lt; 
                 </button> 
                 <button
                   onClick={handleNext}
-                  className="absolute right-4 bottom-2 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm  border-white/40 border-[1px] text-green-100 flex justify-center text-center"
+                  className="absolute right-4 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm  border-white/40 border-[1px] text-green-100 flex justify-center text-center"
                 > 
                  &gt; 
                 </button>
@@ -416,7 +416,7 @@ const Navbar = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
               >
-                rohman.dev adalah tempat baru memulai pengembangan dan bisnis untuk mengelola proyek Anda, melacak kemajuan, dan menerapkan aplikasi dengan lancar.              </motion.p>
+           </motion.p>
               <motion.button
                 className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36 md:mt-2 mt-1"
                 whileHover={{ scale: 1.1 }}
