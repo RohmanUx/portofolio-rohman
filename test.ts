@@ -105,3 +105,4 @@
 // NEW STATE KNOW #### 
 // setName = new value (tambah / kurang di prev next)
 // setName = name (reset) 
+// data object 

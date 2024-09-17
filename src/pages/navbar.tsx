@@ -73,10 +73,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ">
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-0 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
-              Meeting
-            </button>
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-0 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
+                        <button className="bg-[#F6F6F6] text-[#1E1F24] py-0 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
               Contract
             </button>
           </div>
@@ -135,10 +132,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-blue-400 transition-colors border-[1px] border-black">
-              Meeting
-            </button>
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black">
+                        <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black">
               Contract
             </button>
           </div>
@@ -160,7 +154,7 @@ const Navbar = () => {
                   So why { " " }  
                   <BiQuestionMark className="text-xl flex items-center h-full  text-[#F6F6F6] " />
                 </p>
-                <h1 className="text-3xl font-medium text-[#F6F6F6] md:text-4xl md:text-gray-100 py-1  md:text-left text-center">
+                <h1 className="text-3xl font-normal text-[#F6F6F6] md:text-4xl md:text-gray-100 py-1  md:text-left text-center">
                   Saya bisa bantu <br /> untuk membuat <br /> Projects
                 </h1>
                 <p className="text-base text-green-100 md:text-lg md:text-left text-center md:items-start items-center ">
@@ -415,7 +409,7 @@ const Navbar = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-              >
+              >  
            </motion.p>
               <motion.button
                 className="text-white bg-[#535c47] rounded-full px-4 py-2 text-sm md:text-base w-36 md:mt-2 mt-1"
@@ -429,10 +423,10 @@ const Navbar = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
-              >
+              > 
                 <div className="relative text-center ">
                                     <h1 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 via-clr-2 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-sans">
-                   berminat!! 
+                   Berminat!! 
                   </h1>
 
                   {/* Subtext */}
