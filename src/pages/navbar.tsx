@@ -278,14 +278,14 @@ const Navbar = () => {
                   }}
                 />
 
-                {/* Text overlay */}
+                { /* Text overlay */ }
                 <div className="absolute bg-black/50 text-green-100 flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/40 border-[1px] backdrop-blur-sm">
                   <div className="flex justify-center text-xs md:text-base">
-                    1 Years <br /> Pengalaman <br /> Coding ux
+                    1 Years <br /> Pengalaman <br /> Coding 
                   </div>
                 </div>
 
-                {/* Carousel controls */}
+                { /* Carousel controls */ }
                 <button
                   onClick={handlePrev}
                   className="absolute right-16 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100"
