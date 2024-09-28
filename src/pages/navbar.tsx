@@ -73,7 +73,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ">
+          <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
                         <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
               Contract
             </button>
