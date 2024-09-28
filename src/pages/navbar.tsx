@@ -403,7 +403,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
-                Jadi mungkin siap memulai <br /> pengalaman baru #
+                Saya mungkin siap memulai <br /> pengalaman baru #
               </motion.h1>
               <motion.p
                 className="pb-3 text-center text-sm md:text-base md:w-[800px]"
