@@ -7,7 +7,7 @@ import { useState } from "react";
 import { BiQuestionMark } from "react-icons/bi";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from '@radix-ui/react-icons'; // Import Radix UI icon
-import LiveChat from "./liveChat";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,7 +73,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ">
+          <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
                         <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 px-2 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
               Contract
             </button>
@@ -159,9 +159,9 @@ const Navbar = () => {
                   Saya bisa bantu <br /> untuk membuat <br /> Projects
                 </h1>
                 <p className="text-base text-green-100 md:text-lg md:text-left text-center md:items-start items-center ">
-                  Manfaatkan kekuatan pengembangan full stack bersama kami!
-                  <br className="hidden md:block" /> Kami menyediakan platform
-                  paling andal bagi pengembang
+                  Manfaatkan pengalaman pengembangan full stack bersama saya dan konsultasi!
+                  <br className="hidden md:block" /> dengan menyediakan seberapa potofolio
+                  pasti baik bagi pengembang 
                   <br className="hidden md:block" /> dan bisnis untuk mengelola
                   proyek Anda, melacak kemajuan,
                   <br className="hidden md:block" /> dan menerapkan aplikasi
@@ -304,7 +304,7 @@ const Navbar = () => {
                 </h1>
                 <p className="pb-1 md:mt-4 text-sm md:text-base">
                   rohman.dev adalah tempat baru memulai pengembangan dan 
-                  bisnis untuk mengelola proyek Anda, melacak kemajuan, dan
+                  pengalaman baru untuk mengelola proyek Anda, melacak kemajuan, dan
                   menerapkan aplikasi dengan lancar.
                 </p>
                 <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40">
