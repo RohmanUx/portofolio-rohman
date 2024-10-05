@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import { Link } from "react-router-dom";
 import "./svg/hallo.svg";
 import { motion } from "framer-motion";
