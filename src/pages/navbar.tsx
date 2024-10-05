@@ -159,13 +159,15 @@ const Navbar = () => {
                   Saya bisa bantu <br /> untuk membuat <br /> Projects
                 </h1>
                 <p className="text-base text-green-100 md:text-lg md:text-left text-center md:items-start items-center ">
-                  Manfaatkan pengalaman pengembangan full stack bersama saya dan konsultasi!
-                  <br className="hidden md:block" /> dengan menyediakan seberapa potofolio
-                  pasti baik bagi pengembang 
-                  <br className="hidden md:block" /> dan bisnis untuk mengelola
-                  proyek Anda, melacak kemajuan,
-                  <br className="hidden md:block" /> dan menerapkan aplikasi
-                  dengan lancar.
+                Memanfaatkan pengalaman pengembangan full stack 
+                  <br className="hidden md:block" />
+                akan membantu Anda dalam mengelola proyek 
+ 
+                  <br className="hidden md:block" /> 
+                secara efisien, melacak kemajuan, dan 
+                                   <br className="hidden md:block" />
+                menerapkan aplikasi dengan lancar. 
+        
                 </p>
                 <button className="bg-[#F6F6F6] py-2 rounded-full hover:bg-blue-400 transition-colors text-[#1E1F24] w-32 md:w-40">
                   My Certificate
