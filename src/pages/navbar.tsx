@@ -7,7 +7,11 @@ import { useState } from "react";
 import { BiQuestionMark } from "react-icons/bi";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
-import { IoArrowDownSharp } from "react-icons/io5";
+import { IoArchiveSharp, IoArrowDownSharp } from "react-icons/io5";
+import { Button } from "@nextui-org/button";
+import { Image } from "@nextui-org/image";
+// import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
+import { Card, CardFooter } from "@nextui-org/card";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,24 +46,26 @@ const Navbar = () => {
   return (
     <div>
       {/*navbar*/}
-      <div>
+      
+        <div className="w-full px-3 fixed  sm:px-8 md:px-14 lg:px-[125px] z-50 mt-4 rounded-full mx-2">
         <motion.div
-          className="fixed top-0 left-0 w-full py-1 flex items-center justify-between bg-white/80 backdrop-blur-3xl shadow-md z-50 px-4 sm:px-8 md:px-16 lg:px-[138px]"
+          className="top-0 left-0 w-full py-[1.5px] flex items-center justify-between bg-green-900/90 backdrop-blur-3xl shadow-md z-50 rounded-full px-5 backdrop-saturate-150"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div>
-            <h1 className="text-2xl sm:text-2xl font-medium text-gray-900/80 ml-2 font-mono border-r-2 border-black/20 pr-2 ">
-              rohman.<span className=" text-blue-900/80 font-medium">dev </span>
+          <div className="text-center flex items-center">
+            <h1 className="text-2xl sm:text-2xl font-medium text-gray-100/90 ml-0 font-mono border-r-2 border-white/90 pr-2 h-5 text-center flex items-center">
+              Rohman.
+              <span className=" text-orange-100/90 font-medium bg-black/0">com </span>
             </h1>
           </div>
           <div className="hidden md:flex items-center">
-            <ul className="flex list-none gap-6 sm:gap-8 md:gap-8 font-normal text-base sm:text-lg md:text-lg">
+            <ul className="flex list-none gap-10 sm:gap-10 md:gap-10 font-normal text-sm sm:text-base  font-mono text-white/90">
               <li>
                 <Link
                   to="/"
-                  className="hover:text-gray-900/80 transition-colors"
+                  className="hover:text-green-100/80 transition-colors"
                 >
                   Home
                 </Link>
@@ -67,7 +73,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:text-gray-900/80 transition-colors"
+                  className="hover:text-green-100/80 transition-colors"
                 >
                   Portfolio
                 </Link>
@@ -75,16 +81,16 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:text-gray-900/80 transition-colors flex items-center text"
+                  className="hover:text-green-100/80 transition-colors flex items-center text-center"
                 >
                   Help{" "}
-                  <IoArrowDownSharp className="ml-2 text-sm text-gray-900/80" />
+                  <IoArrowDownSharp className="ml-2 text-sm text-orange-200/90 text-center" />
                 </Link>
               </li>
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
-            <button className="bg-[#F6F6F6]/80 text-[#1E1F24]/80 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-blue-400 transition-colors border-[1px] border-black/50">
+            <button className="bg-black/90 text-white/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-green-900/90 transition-colors border-2 border-black/20 font-mono">
               Contract me
             </button>
           </div>
@@ -143,44 +149,50 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black">
+            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
               Contract me
             </button>
           </div>
         </div>
-      </div>
+      </div> 
       {/* About me Page 1 */}
       <div id="target-section">
         <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-[#535c47] md:pt-28 md:pb-24 md:w-auto">
           <div>
-            <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between px-4 md:px-0 items-center  ">
+            <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between ml-5 md:px-0 items-center  ">
               {/* Text and Button */}
               <motion.div
-                className="flex flex-col gap-4 max-w-full md:px-0 md:max-w-4xl items-start justify-start  py-10"
+                className="flex flex-col max-w-full md:px-0 md:max-w-4xl items-center justify-center  py-10  text-[#F6F6F6] text-sm sm:w-full xl:flex xl:justify-start xl:items-start"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-              > 
-     
-                <p className=" bg-[#535c47] py-0 border-[#F6F6F6]/80 border-[1px] w-28 md:text-lg md:w-28 flex justify-center items-center rounded-full text-[#F6F6F6] text-sm ">
-                  So why 
-                  <BiQuestionMark className="text-xl flex items-center h-full ml-1  text-[#F6F6F6]/80 " />
-                </p>
-                <h1 className="text-5xl  text-[#F6F6F6] md:text-3xl md:text-gray-100 py-1  md:text-left text-center font-mono">
-                  Saya bisa bantu <br /> untuk membuat <br /> Projects
+              >
+                <p className=" bg-orange-900/80 xl:py-[1px] border-[#F6F6F6]/90 border-[1px] w-24 sm:text-sm sm:w-32 flex justify-center items-center rounded-full text-white/90 py-[1px] font-mono mb-2">
+                 Pertolongan 
+                                </p>
+                <h1 className="text-5xl  text-[#F6F6F6] md:text-3xl md:text-gray-100 py-0  md:text-left text-center font-mono mb-4">
+                  Ada yang bisa <br />  dibantu dibuatkan <br /> Projects web 
                 </h1>
-                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono">
-                  Memanfaatkan pengalaman pengembangan full stack
+                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono pb-3">
+                  Saya seorang pengalaman pengembangan 
                   <br className="hidden md:block" />
-                  akan membantu Anda dalam mengelola proyek
+                  full stack akan membantu Anda dalam mengelola 
                   <br className="hidden md:block" />
-                  secara efisien, melacak kemajuan, dan
+                  proyek    secara efisien, melacak kemajuan, dan
                   <br className="hidden md:block" />
-                  menerapkan aplikasi dengan lancar.
+                  menerapkan aplikasi dengan lancar  
+                  <br className="hidden md:block" />
+                  sesuai keinginan bersama 
                 </p>
-                <button className="bg-white/80 py-1 rounded-full hover:bg-blue-400 transition-colors text-[#1E1F24] w-20 md:w-28">
-                  My resume 
-                </button>
+                <Button 
+                  
+                  href="https://drive.google.com/file/d/1wvxBA4zNG3tm6fNPh-4OYqnrMxRgFHpn/view?usp=sharing"
+                  color="primary"
+                  variant="bordered"
+                  className="py-1 h-9 rounded-full hover:bg-green-100 transition-colors w-20 md:w-28 border border-black/90 text-black/90 bg-white/90 font-mono"
+                >
+                  My resume
+                </Button>
               </motion.div>
 
               {/* Image Section */}
@@ -190,31 +202,52 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <img
-                  src="https://cdn.dribbble.com/userupload/15332517/file/original-a64cd79737df1ee5c2451eb8c825a5d5.png?resize=1200x900"
-                  alt="Example"
-                  width={350}
-                  height={280}
-                  className="rounded-2xl shadow-md md:w-[500px] md:h-[400px] "
-                />
+                <Card isFooterBlurred radius="lg" className="border-none mx-0 p-0">
+                  <Image
+                    isBlurred
+                    width={580}
+                    height={380}
+                    src="https://nextui.org/images/hero-card.jpeg"
+                    alt="NextUI Album Cover"
+                    className="rounded-xl shadow-2xl md:w-[1400px] md:h-[800px] m-0 p-0"
+                  />
+                  <CardFooter className="justify-between before:bg-green-100/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 w-[calc(100%_-_8px)] shadow-small m-0 z-10 w-full h-16">
+                    <p className="text-lg text-white/80">
+                    I wanna intership Contact me
+                    </p>
+                    <Button
+                      className="text-tiny text-white bg-black/10 border border-black/90"
+                      variant="flat"
+                      color="default"
+                      radius="lg"
+                      size="sm"
+                    >
+               Contact me
+                    </Button>
+                  </CardFooter>
+                </Card>
               </motion.div>
             </div>
           </div>
 
           {/* Quote and Experience */}
           <motion.div
-            className="mt-8 max-w-full p-4 bg-[#F6F6F6] rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 "
+            className="mt-8 max-w-full p-4 bg-green-100/90 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 border border-black/90 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-sm text-[#1E1F24] md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/40 text-center md:text-left font-mono">
+            <p className="text-sm text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/20 text-center md:text-left font-mono">
               <q>
-                dgn menulis: js, ts, tailwind,
-                <br className="hidden md:block" /> HTML, CSS, React, prismaORM,
-                shadCn ui, MySQL.
+                berpengalaman menulis:{" "}
+                <mark className="bg-green-900/90 text-white">
+                  {" "}
+                  js, ts, tailwind,
+                  <br className="hidden md:block" /> HTML, CSS, React,
+                  prismaORM, shadCn ui, MySQL.{" "}
+                </mark>
                 <br className="hidden md:block" /> bisa di pakai untuk membuat
-                web
+                website interaktif
               </q>
             </p>
             <div className="flex items-center gap-4">
@@ -223,14 +256,15 @@ const Navbar = () => {
                 alt="Muhammad Rachman"
                 width={60}
                 height={60}
-                className="rounded-full md:w-20 md:h-20"
+                className="rounded-full md:w-20 md:h-20 shadow-2xl"
               />
+
               <div>
-                <p className="text-[#1E1F24] font-semibold text-sm md:text-base font-mono">
+                <p className="text-black/90 font-semibold text-sm md:text-base font-mono">
                   Muhammad Rachman{" "}
                 </p>
-                <p className="text-[#1E1F24]/80 text-sm md:text-base font-mono">
-                  My Experience{" "}
+                <p className="text-green-900/90 text-sm md:text-base font-mono">
+                 - My Experience - {" "}
                 </p>
               </div>
             </div>
@@ -238,21 +272,49 @@ const Navbar = () => {
 
           {/* Partners */}
           <div className="mt-8 max-w-full mx-2 flex flex-wrap justify-center gap-4 md:gap-6 md:mt-10 md:max-w-2xl">
-            <div className="bg-white px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
-              LinkedIn
-            </div>
-            <div className="bg-white px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
-              JobSeek
-            </div>
-            <div className="bg-white px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
-              Jooble
-            </div>
-            <div className="bg-white px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
+            <Button
+              color="primary"
+              variant="shadow"
+              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+            >
+              Shadow
+            </Button>
+            <Button
+              color="primary"
+              variant="shadow"
+              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+            >
               Glints
-            </div>
-            <div className="bg-white px-4 py-1 rounded-full shadow-sm text-center text-gray-900 text-sm md:text-base">
-              Deals
-            </div>
+            </Button>
+            <Button
+              color="primary"
+              variant="shadow"
+              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+            >
+              joobseek
+            </Button>
+            <Button
+              color="primary"
+              variant="shadow"
+              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+            >
+              linklind
+            </Button>
+            <Button
+              color="primary"
+              variant="shadow"
+              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+            >
+              Jooble
+            </Button>
+
+            <Button
+              color="primary"
+              variant="shadow"
+              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+            >
+              Dealls
+            </Button>
           </div>
         </div>
       </div>
@@ -315,9 +377,10 @@ const Navbar = () => {
                   Kelola proyek <br /> fullstack di rohman.dev <br />{" "}
                 </h1>
                 <p className="pb-1 md:mt-4 text-sm md:text-base font-mono">
-                  rohman.dev adalah lingkungan dimana akan memulai pengembangan dan
-                  pengalaman baru untuk mengelola proyek Anda, melacak kemajuan,
-                  dan menerapkan aplikasi dengan lancar tergantung perencanaan.
+                  rohman.dev adalah lingkungan dimana akan memulai pengembangan
+                  dan pengalaman baru untuk mengelola proyek Anda, melacak
+                  kemajuan, dan menerapkan aplikasi dengan lancar tergantung
+                  perencanaan.
                 </p>
                 <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40 text-sm">
                   My Portfolio
@@ -330,9 +393,9 @@ const Navbar = () => {
               <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-40">
                 <p className="text-4xl text-white/80 mb-7 md:text-5xl md:w-[700px] font-mono">
                   Saya juga bisa membantu seberapa masalah project sesuai
-                  keingian anda dan beragam {" "}
+                  keingian anda dan beragam{" "}
                 </p>
-                                {/* Icon grid */}
+                {/* Icon grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
                   {/* Front End */}
                   <motion.div
@@ -398,7 +461,7 @@ const Navbar = () => {
           <div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0 ">
             <button
               onClick={scrollToSection}
-              className="fixed lg:bottom-12 lg:right-28 right-5 bottom-5 bg-gray-200/60 text-gray-900/90 p-1 lg:p-1 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-400/60 focus:outline-none z-20 backdrop-blur-3xl border-gray-900/90 border-[1px] "
+              className="fixed lg:bottom-10 lg:right-28 right-5 bottom-2 bg-green-100/90 text-gray-900/90 p-1 lg:p-1 rounded-full shadow-lg flex items-center justify-center hover:bg-green-400/90 focus:outline-none z-20 backdrop-blur-3xl border-gray-900/90 border-[1px] "
             >
               <ArrowUpIcon className="w-6 h-6" />
             </button>
@@ -410,20 +473,22 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
-              <div className="h-full font-mono text-5xl">Hubungi saya jika membutuhkan Suatu</div>
+                <div className="h-full font-mono text-5xl">
+                  Hubungi saya jika membutuhkan Suatu
+                </div>
               </motion.h1>
               <motion.p
                 className="pb-3 text-center text-sm md:text-base md:w-[800px]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-              ></motion.p>
+              > </motion.p>
               <motion.button
                 className="text-black/80 bg-gray-100/80 rounded-full px-2 py-1 text-sm md:text-base w-40 md:mt-2 mt-1 border border-black"
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 900 }}
               >
-                With email | 📧 
+                With email | 📧
               </motion.button>
               <motion.div
                 className="text-gray-700 text-[60px] md:text-[120px] shadow-black text-shadow mt-4 md:mt-6 justify-center flex items-center text-center"
@@ -433,7 +498,7 @@ const Navbar = () => {
               >
                 <div className="relative text-center ">
                   <h2 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 via-clr-2 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-mono ">
-                    CONTACT ME!! 
+                    CONTACT ME!!
                   </h2>
 
                   {/* Subtext */}

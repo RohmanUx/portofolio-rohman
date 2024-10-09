@@ -1,6 +1,14 @@
+// Importing only once from the correct source
+const { nextui } = require('@nextui-org/theme');
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html" ,"./src/**/*.{js, ts,jsx,tsx}"],
+  plugins: [nextui()], // Using the single instance of nextui
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
@@ -8,19 +16,18 @@ export default {
         'clr-2': '#00c853', // A vibrant green for highlights
         'clr-3': '#ffeb3b', // A bright yellow for emphasis
         'clr-4': '#d500f9', // A rich purple for contrasting elements
-      
-      'clr-5': '#00c2ff',
-  'clr-6': '#33ff8c',
-  'clr-7': '#ffc640',
-  'clr-8': '#e54cff', },
-
-                  keyframes: {
+        'clr-5': '#00c2ff',
+        'clr-6': '#33ff8c',
+        'clr-7': '#ffc640',
+        'clr-8': '#e54cff',
+      },
+      keyframes: {
         'aurora-gradient': {
           '0%': {
             'background-position': '0% 50%',
           },
           '50%': {
-            'background-position': '100% 50% ',
+            'background-position': '100% 50%',
           },
           '100%': {
             'background-position': '0% 50%',
@@ -31,24 +38,5 @@ export default {
         'aurora-gradient': 'aurora-gradient 2s ease-in-out infinite',
       },
     },
-
-    }, 
-    plugins: [
-    function ({ addUtilities }) {
-      addUtilities(
-        {
-          '.text-stroke': {
-            'text-shadow': '1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000',
-          },
-          '.text-stroke-lg': {
-            'text-shadow': '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000',
-          },
-          '.text-stroke-sm': {
-            'text-shadow': '0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000',
-          },
-        },
-        ['responsive', 'hover']
-      );
-    },
-  ],  
+  },
 };

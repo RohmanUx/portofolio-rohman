@@ -1,4 +1,5 @@
 
+
 // INDEX & NON INDEX . HITUNGAN ##### || 
 // index 0 (sometime index value 1 & value 2 non index) #### 
 // .indexOf   (index ke berapa (string value)) 
@@ -109,3 +110,8 @@
 
 // useCallback / useMemo = button 
 // [id] di callback bisa ulang ${id} tanpa referesh seluruh browser / sedikit efect jadi bisa manual di ulang  
+
+
+
+
+
