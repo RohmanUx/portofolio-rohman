@@ -184,7 +184,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <p className=" bg-orange-900/80 xl:py-[1px] border-[#F6F6F6]/90 border-[1px] w-20 sm:text-sm sm:w-20 flex justify-center items-center rounded-full text-white/90 py-[1px] font-mono mb-2">
+                <p className=" bg-green-900/80 xl:py-[1px] border-[#F6F6F6]/90 border-[1px] w-20 sm:text-sm sm:w-20 flex justify-center items-center rounded-full text-white/90 py-[1px] font-mono mb-2">
                   Layanan
                 </p>
                 <h1 className="text-5xl  text-[#F6F6F6] md:text-4xl md:text-gray-100 py-0  md:text-left text-center font-mono mb-5">
@@ -422,7 +422,7 @@ const Navbar = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
                   {/* Front End */}
                   <motion.div
-                    className="bg-black/10 text-black rounded-xl p-4 flex flex-col items-center  border border-black/80"
+                    className="bg-black/60 text-black rounded-2xl p-4 flex flex-col items-center  border border-black/20"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -473,7 +473,7 @@ const Navbar = () => {
 
                   { /* Back End */ }
                   <motion.div
-                    className="bg-green-900/80 text-black rounded-xl p-4 flex flex-col items-center border border-white"
+                    className="bg-green-900/90 text-black rounded-2xl p-4 flex flex-col items-center border border-white/20"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -526,7 +526,7 @@ const Navbar = () => {
 
                   {/* UI & UX */}
                   <motion.div
-                    className="bg-black/10 text-black rounded-xl p-4 flex flex-col items-center  border border-black/80"
+                    className="bg-black/60 text-black rounded-2xl p-4 flex flex-col items-center  border border-black/20"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -559,35 +559,25 @@ const Navbar = () => {
             {/* Contact us Page 4  */}
             <div className="h-[600px] flex justify-center flex-col items-center">
               <motion.h1
-                className="text-center text-sm md:text-[48px] pb-5 md:pb-5 w-full text-gray-900/80"
+                className="text-center text-sm md:text-[48px] pb-8 w-full text-gray-900/80"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
-                <div className="h-full font-mono text-5xl">
+                <div className="h-full font-mono text-2xl">
                   Hubungi saya jika membutuhkan suatu
                 </div>
               </motion.h1>
-              <motion.p
-                className="pb-3 text-center text-sm md:text-base md:w-[800px]"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.5 }}
-              >
-                {" "}
-              </motion.p>
-              <motion.button
-                className="text-black/90 bg-green-100/80 rounded-full px-0 py-0 text-xl w-36 md:mt-2 mt-1 border border-black/0 flex items-center justify-center h-8 font-mono"
+                           <motion.button
+                className=" rounded-full flex items-center justify-center h-8 w-32 font-mono text-sm bg-black/10 text-black/90 border border-black/90 "
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 900 }}
               >
                 {" "}
-                <Button className="rounded-full flex items-center justify-center h-8 w-36 border-black/90 border font-mono text-xl bg-green-100/90">
-                  Contact <IoMailOpen className="ml-1 text-xl" />{" "}
-                </Button>
-              </motion.button>
+                  Contact <IoMailOpen className="ml-2 text-sm" />{" "}
+                              </motion.button>
               <motion.div
-                className="text-gray-700 text-[60px] md:text-[120px] shadow-black text-shadow mt-4 md:mt-6 justify-center flex items-center text-center"
+                className="text-black/90 text-6xl md:text-[120px] mt-4 md:mt-7 justify-center flex items-center text-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
@@ -603,9 +593,9 @@ const Navbar = () => {
             </div> { " " } 
           </div>
           { /* Footer page 5 */ }
-          <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-xl font-mono">  
+          <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-lg font-mono">  
             <p className="text-center md:text-left mb-2 md:mb-0">
-              ©2024 rohman.dev | all rights reserved
+              ©2024 rohman.dev all rights reserved
             </p>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
               <motion.p
