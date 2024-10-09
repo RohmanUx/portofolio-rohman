@@ -6,11 +6,27 @@ import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import ne
 import { useState } from "react";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
-import { IoArrowDownSharp } from "react-icons/io5";
+import { IoArrowDownSharp, IoCode } from "react-icons/io5";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 // import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
 import { Card, CardFooter } from "@nextui-org/card";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiDaisyui,
+  SiNextui,
+  SiShadcnui,
+  SiNodedotjs,
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+  SiPrisma,
+  SiHostinger,
+} from "react-icons/si";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,8 +61,8 @@ const Navbar = () => {
   return (
     <div>
       {/*navbar*/}
-      
-        <div className="w-full px-3 fixed  sm:px-8 md:px-14 lg:px-[125px] z-50 mt-4 rounded-full mx-2">
+
+      <div className="w-full px-3 fixed  sm:px-8 md:px-14 lg:px-[125px] z-50 mt-4 rounded-full mx-2">
         <motion.div
           className="top-0 left-0 w-full py-[1.5px] flex items-center justify-between bg-green-900/90 backdrop-blur-3xl shadow-md z-50 rounded-full px-5 backdrop-saturate-150"
           initial={{ opacity: 0, y: -50 }}
@@ -56,7 +72,9 @@ const Navbar = () => {
           <div className="text-center flex items-center">
             <h1 className="text-2xl sm:text-2xl font-medium text-gray-100/90 ml-0 font-mono border-r-2 border-white/90 pr-2 h-5 text-center flex items-center">
               Rohman.
-              <span className=" text-orange-100/90 font-medium bg-black/0">com </span>
+              <span className=" text-orange-100/90 font-medium bg-black/0">
+                com{" "}
+              </span>
             </h1>
           </div>
           <div className="hidden md:flex items-center">
@@ -89,9 +107,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
-            <button className="bg-black/90 text-white/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-green-900/90 transition-colors border-2 border-black/20 font-mono">
-              Contract me
-            </button>
+            <Button className="bg-black/90 text-white/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-green-100/90 transition-colors border-2 border-black/90 hover:text-black/90 font-mono">
+              Contract <AiOutlineWhatsApp className="ml-1" />
+            </Button>
           </div>
           <button
             className="md:hidden flex items-center"
@@ -148,12 +166,12 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
+            <Button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
               Contract me
-            </button>
+            </Button>
           </div>
         </div>
-      </div> 
+      </div>
       {/* About me Page 1 */}
       <div id="target-section">
         <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-[#535c47] md:pt-28 md:pb-24 md:w-auto">
@@ -166,25 +184,24 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <p className=" bg-orange-900/80 xl:py-[1px] border-[#F6F6F6]/90 border-[1px] w-24 sm:text-sm sm:w-32 flex justify-center items-center rounded-full text-white/90 py-[1px] font-mono mb-2">
-                 Pertolongan 
-                                </p>
-                <h1 className="text-5xl  text-[#F6F6F6] md:text-3xl md:text-gray-100 py-0  md:text-left text-center font-mono mb-4">
-                  Ada yang bisa <br />  dibantu dibuatkan <br /> Projects web 
-                </h1>
-                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono pb-3">
-                  Saya seorang pengalaman pengembangan 
-                  <br className="hidden md:block" />
-                  full stack akan membantu Anda dalam mengelola 
-                  <br className="hidden md:block" />
-                  proyek    secara efisien, melacak kemajuan, dan
-                  <br className="hidden md:block" />
-                  menerapkan aplikasi dengan lancar  
-                  <br className="hidden md:block" />
-                  sesuai keinginan bersama 
+                <p className=" bg-orange-900/80 xl:py-[1px] border-[#F6F6F6]/90 border-[1px] w-20 sm:text-sm sm:w-20 flex justify-center items-center rounded-full text-white/90 py-[1px] font-mono mb-2">
+                  Layanan
                 </p>
-                <Button 
-                  
+                <h1 className="text-5xl  text-[#F6F6F6] md:text-4xl md:text-gray-100 py-0  md:text-left text-center font-mono mb-5">
+                  Ada yang bisa <br /> dibantu dibuatkan <br /> Projects web
+                </h1>
+                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono pb-2">
+                  Saya seorang pengalaman pengembangan
+                  <br className="hidden md:block" />
+                  full stack akan membantu Anda dalam mengelola
+                  <br className="hidden md:block" />
+                  proyek secara efisien, melacak kemajuan, dan
+                  <br className="hidden md:block" />
+                  menerapkan aplikasi dengan lancar
+                  <br className="hidden md:block" />
+                  sesuai keinginan bersama
+                </p>
+                <Button
                   href="https://drive.google.com/file/d/1wvxBA4zNG3tm6fNPh-4OYqnrMxRgFHpn/view?usp=sharing"
                   color="primary"
                   variant="bordered"
@@ -201,7 +218,11 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <Card isFooterBlurred radius="lg" className="border-none mx-0 p-0">
+                <Card
+                  isFooterBlurred
+                  radius="lg"
+                  className="border-none mx-0 p-0"
+                >
                   <Image
                     isBlurred
                     width={580}
@@ -210,18 +231,18 @@ const Navbar = () => {
                     alt="NextUI Album Cover"
                     className="rounded-xl shadow-2xl md:w-[1400px] md:h-[800px] m-0 p-0"
                   />
-                  <CardFooter className="justify-between before:bg-green-100/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-16">
-                    <p className="text-lg text-white/80">
-                    I wanna intership Contact me
+                  <CardFooter className="justify-between before:bg-green-100/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
+                    <p className="text-3xl text-white/90">
+                      I wanna intership Contact me
                     </p>
                     <Button
-                      className="text-tiny text-white bg-black/10 border border-black/90"
+                      className="text-tiny text-white bg-black/0 border border-black/90"
                       variant="flat"
                       color="default"
                       radius="lg"
                       size="sm"
                     >
-               Contact me
+                      Contact me
                     </Button>
                   </CardFooter>
                 </Card>
@@ -238,15 +259,16 @@ const Navbar = () => {
           >
             <p className="text-sm text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/20 text-center md:text-left font-mono">
               <q>
-                berpengalaman menulis:{" "}
+                berpengalaman writting{" "}
                 <mark className="bg-green-900/90 text-white">
                   {" "}
-                  js, ts, tailwind,
-                  <br className="hidden md:block" /> HTML, CSS, React,
-                  prismaORM, shadCn ui, MySQL.{" "}
-                </mark>
-                <br className="hidden md:block" /> bisa di pakai untuk membuat
-                website interaktif
+                  javascrip, typescrip, tailwind,
+                  <br className="hidden md:block" /> React, next, prismaORM,
+                  shadcnUi, express, node, MySQL,{" "}
+                  <br className="hidden md:block" />
+                  nextUi, dasyUi, html, css, elementor
+                </mark>{" "}
+                untuk website
               </q>
             </p>
             <div className="flex items-center gap-4">
@@ -263,7 +285,7 @@ const Navbar = () => {
                   Muhammad Rachman{" "}
                 </p>
                 <p className="text-green-900/90 text-sm md:text-base font-mono">
-                 - My Experience - {" "}
+                  - My Experience -{" "}
                 </p>
               </div>
             </div>
@@ -406,11 +428,44 @@ const Navbar = () => {
                     <FaCode size={40} className="text-blue-100/90" />
                     <div className="mt-6 text-center">
                       <div className="font-semibold text-white">Front End </div>
-                      <div className="text-sm mt-2 text-white">
-                        I can Redux, React hooks, HTML, CSS, Tailwind CSS,
-                        Next.js, and React. I'm skilled in building modern,
-                        responsive web applications
-                      </div>
+                      <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-1 space-y-1 items-center justify-center">
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-1 h-6">
+                          <FaCss3Alt className="text-blue-500" />
+                          <span className="text-black">CSS </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <FaHtml5 className="text-orange-500" />
+                          <span className="text-black">HTML </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiTailwindcss className="text-teal-500" />
+                          <span className="text-black">Tailwind CSS </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <FaReact className="text-blue-400" />
+                          <span className="text-black">React </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiRedux className="text-purple-600" />
+                          <span className="text-black">Redux </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiNextdotjs className="text-gray-300" />
+                          <span className="text-black">Next.js </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiDaisyui className="text-gray-900" />
+                          <span className="text-black">dasyUi </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiNextui className="text-gray-900" />
+                          <span className="text-black">nextUi </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiShadcnui className="text-gray-900" />
+                          <span className="text-black">shadcnUi </span>
+                        </div>
+                      </div>{" "}
                     </div>
                   </motion.div>
 
@@ -423,12 +478,45 @@ const Navbar = () => {
                   >
                     <FaDatabase size={40} className="text-red-500/90" />
                     <div className="mt-6 text-center">
-                      <div className="font-semibold">Back End </div>
-                      <div className="text-sm mt-2">
-                        I can work with Prisma, MySQL, Express, and Node.js. I’m
-                        experienced in developing robust back-end systems and
-                        managing databases.
-                      </div>
+                      <div className="font-semibold text-black">Back End </div>
+                      <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-1 space-y-1 items-center justify-center">
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-1 h-6">
+                          <SiNodedotjs className="text-blue-500" />
+                          <span className="text-black">node </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiExpress className="text-orange-500" />
+                          <span className="text-black">express </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <IoCode className="text-teal-500" />
+                          <span className="text-black">robust </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <IoCode className="text-blue-400" />
+                          <span className="text-black">oop </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <IoCode className="text-purple-600" />
+                          <span className="text-black">controller app router middleware etc  </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiMysql className="text-gray-300" />
+                          <span className="text-black">mySql </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiMongodb className="text-gray-900" />
+                          <span className="text-black">mongo </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiPrisma className="text-gray-900" />
+                          <span className="text-black">prismaOrm  </span>
+                        </div>
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
+                          <SiHostinger className="text-gray-900" />
+                          <span className="text-black">hosting & vps </span>
+                        </div>
+                      </div>{" "}
                     </div>
                   </motion.div>
 
@@ -443,10 +531,10 @@ const Navbar = () => {
                     <div className="mt-6 text-center">
                       <div className="font-semibold text-white">Interest </div>
                       <div className="text-sm mt-2 text-white">
-                        I want to learn MongoDB, Svelte, Material UI, Framer
-                        Motion, color palette, and Sass. I'm interested in
+                        I want to learn <br /> 1.MongoDB, 2.Svelte, 3.Framer
+                        Motion, 4.Sass, 5.mySql, 6.ux ui. <br />  I'm interested in
                         expanding my skills in modern web development and
-                        design.
+                        design. 
                       </div>
                     </div>
                   </motion.div>
@@ -481,7 +569,9 @@ const Navbar = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-              > </motion.p>
+              >
+                {" "}
+              </motion.p>
               <motion.button
                 className="text-black/80 bg-gray-100/80 rounded-full px-2 py-1 text-sm md:text-base w-40 md:mt-2 mt-1 border border-black"
                 whileHover={{ scale: 1.1 }}
