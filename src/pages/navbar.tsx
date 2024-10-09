@@ -201,14 +201,15 @@ const Navbar = () => {
                   <br className="hidden md:block" />
                   sesuai keinginan bersama
                 </p>
-                <Button
-                  href="https://drive.google.com/file/d/1wvxBA4zNG3tm6fNPh-4OYqnrMxRgFHpn/view?usp=sharing"
-                  color="primary"
-                  variant="bordered"
-                  className="py-1 h-9 rounded-full hover:bg-green-100 transition-colors w-20 md:w-28 border border-black/90 text-black/90 bg-white/90 font-mono"
-                >
-                  My resume
-                </Button>
+                <a href="https://drive.google.com/file/d/1wvxBA4zNG3tm6fNPh-4OYqnrMxRgFHpn/view?usp=sharing">
+                  <Button
+                    color="primary"
+                    variant="bordered"
+                    className="py-1 h-9 rounded-full hover:bg-green-100 transition-colors w-20 md:w-28 border border-black/90 text-black/90 bg-white/90 font-mono"
+                  >
+                    My resume
+                  </Button>{" "}
+                </a>
               </motion.div>
 
               {/* Image Section */}
@@ -229,7 +230,7 @@ const Navbar = () => {
                     height={380}
                     src="https://nextui.org/images/hero-card.jpeg"
                     alt="NextUI Album Cover"
-                    className="rounded-xl md:w-[1400px] md:h-[800px] m-0 p-0"
+                    className="rounded-xl md:w-[1400px] md:h-[800px] m-0 p-0 w-[1200px]"
                   />
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
                     <p className="text-3xl text-white/90">
@@ -259,7 +260,7 @@ const Navbar = () => {
           >
             <p className="text-sm text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/20 text-center md:text-left font-mono">
               <q>
-                berpengalaman writting { " " }   
+                berpengalaman writting{" "}
                 <mark className="bg-green-900/90 text-white">
                   {" "}
                   javascrip, typescrip, tailwind,
@@ -298,7 +299,7 @@ const Navbar = () => {
               variant="shadow"
               className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
-              Shadow
+              glassdoor 
             </Button>
             <Button
               color="primary"
@@ -377,33 +378,34 @@ const Navbar = () => {
 
                 {/* Carousel controls */}
                 <div className="bg-white">
-                <button
-                  onClick={handlePrev}
-                  className="absolute right-16 bottom-2 transform bg-black/60 h-8 w-8 rounded-full backdrop-blur-sm border-white/40 border text-green-100 text-sm flex items-center justify-center"
-                >
-                  &lt;
-                </button>
-                <button
-                  onClick={handleNext}
-                  className="absolute right-5 bottom-2 transform bg-black/60 h-8 w-8 rounded-full backdrop-blur-sm  border-white/40 border text-green-100 flex justify-center text-center text-sm items-center"
-                >
-                  &gt;
-                </button> </div>
+                  <button
+                    onClick={handlePrev}
+                    className="absolute right-16 bottom-2 transform bg-black/60 h-8 w-8 rounded-full backdrop-blur-sm border-white/40 border text-green-100 text-sm flex items-center justify-center"
+                  >
+                    &lt;
+                  </button>
+                  <button
+                    onClick={handleNext}
+                    className="absolute right-5 bottom-2 transform bg-black/60 h-8 w-8 rounded-full backdrop-blur-sm  border-white/40 border text-green-100 flex justify-center text-center text-sm items-center"
+                  >
+                    &gt;
+                  </button>{" "}
+                </div>
               </Box>
 
               <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start">
                 <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 text-white mb-1">
-                  Tentang web { " " }
+                  Tentang web{" "}
                 </p>
                 <h1 className="text-2xl md:text-4xl py-1 mb-5">
                   rohman.com <br /> adalah proyek portofolio fullstack pribadi{" "}
-                  <br /> { " " }
+                  <br />{" "}
                 </h1>
                 <p className="pb-1 md:mt-4 text-sm md:text-base font-mono">
                   Memulai dasar yg baik dan tidak selalu bagus tapi tetap
                   berusaha terbaik walaupun gagal{" "}
                 </p>
-                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black" >
+                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black">
                   My Portfolio
                 </button>
                 <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black">
@@ -472,7 +474,7 @@ const Navbar = () => {
                     </div>
                   </motion.div>
 
-                  { /* Back End */ }
+                  {/* Back End */}
                   <motion.div
                     className="bg-green-900/90 text-black rounded-2xl p-4 flex flex-col items-center border border-white/20"
                     variants={cardVariants}
@@ -569,14 +571,14 @@ const Navbar = () => {
                   Hubungi saya jika membutuhkan suatu
                 </div>
               </motion.h1>
-                           <motion.button
+              <motion.button
                 className=" rounded-full flex items-center justify-center h-8 w-32 font-mono text-sm bg-white text-black/90 border border-black/90 "
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 900 }}
               >
                 {" "}
-                  Contact <IoMailOpen className="ml-2 text-sm" />{" "}
-                              </motion.button>
+                Contact <IoMailOpen className="ml-2 text-sm" />{" "}
+              </motion.button>
               <motion.div
                 className="text-black/90 text-6xl md:text-[120px] mt-4 md:mt-7 justify-center flex items-center text-center"
                 initial={{ opacity: 0 }}
@@ -588,13 +590,13 @@ const Navbar = () => {
                     Contact Me...
                   </h2>
 
-                  { /* Subtext */ }
+                  {/* Subtext */}
                 </div>
-              </motion.div> { " " }
-            </div> { " " } 
+              </motion.div>{" "}
+            </div>{" "}
           </div>
-          { /* Footer page 5 */ }
-          <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-lg font-mono">  
+          {/* Footer page 5 */}
+          <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-lg font-mono">
             <p className="text-center md:text-left mb-2 md:mb-0">
               ©2024 rohman.dev all rights reserved
             </p>
