@@ -101,7 +101,7 @@ const Navbar = () => {
                   className="hover:text-green-100/80 transition-colors flex items-center text-center"
                 >
                   Help{" "}
-                  <IoArrowDownSharp className="ml-2 text-sm text-orange-200/90 text-center" />
+                  <IoArrowDownSharp className="ml-2 text-sm text-white text-center" />
                 </Link>
               </li>
             </ul>
@@ -236,7 +236,7 @@ const Navbar = () => {
                       I wanna intership Contact me
                     </p>
                     <Button
-                      className="text-tiny text-white bg-black/0 border border-black/90"
+                      className="text-tiny text-black bg-black/0 border border-black/90 bg-white"
                       variant="flat"
                       color="default"
                       radius="lg"
@@ -259,7 +259,7 @@ const Navbar = () => {
           >
             <p className="text-sm text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/20 text-center md:text-left font-mono">
               <q>
-                berpengalaman writting{" "}
+                berpengalaman writting { " " }   
                 <mark className="bg-green-900/90 text-white">
                   {" "}
                   javascrip, typescrip, tailwind,
@@ -296,35 +296,35 @@ const Navbar = () => {
             <Button
               color="primary"
               variant="shadow"
-              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+              className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
               Shadow
             </Button>
             <Button
               color="primary"
               variant="shadow"
-              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+              className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
               Glints
             </Button>
             <Button
               color="primary"
               variant="shadow"
-              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+              className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
               joobseek
             </Button>
             <Button
               color="primary"
               variant="shadow"
-              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+              className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
               linklind
             </Button>
             <Button
               color="primary"
               variant="shadow"
-              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+              className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
               Jooble
             </Button>
@@ -332,7 +332,7 @@ const Navbar = () => {
             <Button
               color="primary"
               variant="shadow"
-              className="bg-orange-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
+              className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
               Dealls
             </Button>
@@ -390,11 +390,11 @@ const Navbar = () => {
                 </button>
               </Box>
 
-              <div className="flex flex-col justify-center space-y-4 px-4 md:px-16 md:text-left text-center items-center md:items-start">
-                <p className="uppercase text-xs md:text-xs border-black border-[1px] py-2 px-3 rounded-full xl:mt-0 mt-2">
-                  Tentang Web{" "}
+              <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start">
+                <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 text-white mb-1">
+                  Tentang web{" "}
                 </p>
-                <h1 className="text-2xl md:text-4xl py-1">
+                <h1 className="text-2xl md:text-4xl py-1 mb-5">
                   rohman.com <br /> adalah proyek portofolio fullstack pribadi{" "}
                   <br />{" "}
                 </h1>
@@ -402,10 +402,10 @@ const Navbar = () => {
                   Memulai dasar yg baik dan tidak selalu bagus tapi tetap
                   berusaha terbaik walaupun gagal{" "}
                 </p>
-                <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40 text-sm">
+                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black" >
                   My Portfolio
                 </button>
-                <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40 text-sm">
+                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black">
                   My Dokumentasi
                 </button>
               </div>
@@ -430,7 +430,7 @@ const Navbar = () => {
                     <FaCode size={40} className="text-blue-100/90" />
                     <div className="mt-6 text-center">
                       <div className="font-semibold text-white">Front End </div>
-                      <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-1 space-y-1 items-center justify-center">
+                      <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-2 space-y-2 items-center justify-center">
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-1 h-6">
                           <FaCss3Alt className="text-blue-500" />
                           <span className="text-black">CSS </span>
@@ -481,7 +481,7 @@ const Navbar = () => {
                     <FaDatabase size={40} className="text-red-500/90" />
                     <div className="mt-6 text-center">
                       <div className="font-semibold text-white">Back End </div>
-                      <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-1 space-y-1 items-center justify-center">
+                      <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-2 space-y-2 items-center justify-center">
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-1 h-6">
                           <SiNodedotjs className="text-blue-500" />
                           <span className="text-black">node </span>
@@ -569,7 +569,7 @@ const Navbar = () => {
                 </div>
               </motion.h1>
                            <motion.button
-                className=" rounded-full flex items-center justify-center h-8 w-32 font-mono text-sm bg-black/10 text-black/90 border border-black/90 "
+                className=" rounded-full flex items-center justify-center h-8 w-32 font-mono text-sm bg-white text-black/90 border border-black/90 "
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 900 }}
               >
