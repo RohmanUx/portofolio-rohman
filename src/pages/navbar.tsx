@@ -2,11 +2,11 @@
 import { Link } from "react-router-dom";
 import "./svg/hallo.svg";
 import { motion } from "framer-motion";
-import { FaCode, FaDatabase, FaMailchimp, FaPencilRuler } from "react-icons/fa"; // Import necessary icons
+import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import necessary icons
 import { useState } from "react";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
-import { IoArrowDownSharp, IoCode, IoMail, IoMailOpen } from "react-icons/io5";
+import { IoArrowDownSharp, IoCode, IoMailOpen } from "react-icons/io5";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 // import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
