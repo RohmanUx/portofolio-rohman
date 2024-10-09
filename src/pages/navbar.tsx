@@ -2,11 +2,11 @@
 import { Link } from "react-router-dom";
 import "./svg/hallo.svg";
 import { motion } from "framer-motion";
-import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import necessary icons
+import { FaCode, FaDatabase, FaMailchimp, FaPencilRuler } from "react-icons/fa"; // Import necessary icons
 import { useState } from "react";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
-import { IoArrowDownSharp, IoCode } from "react-icons/io5";
+import { IoArrowDownSharp, IoCode, IoMail, IoMailOpen } from "react-icons/io5";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 // import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
@@ -395,16 +395,18 @@ const Navbar = () => {
                   Tentang Web{" "}
                 </p>
                 <h1 className="text-2xl md:text-4xl py-1">
-                  Kelola proyek <br /> fullstack di rohman.dev <br />{" "}
+                  rohman.com <br /> adalah proyek portofolio fullstack pribadi{" "}
+                  <br />{" "}
                 </h1>
                 <p className="pb-1 md:mt-4 text-sm md:text-base font-mono">
-                  rohman.dev adalah lingkungan dimana akan memulai pengembangan
-                  dan pengalaman baru untuk mengelola proyek Anda, melacak
-                  kemajuan, dan menerapkan aplikasi dengan lancar tergantung
-                  perencanaan.
+                  Memulai dasar yg baik dan tidak selalu bagus tapi tetap
+                  berusaha terbaik walaupun gagal{" "}
                 </p>
                 <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40 text-sm">
                   My Portfolio
+                </button>
+                <button className="bg-[#535c47] text-white rounded-full px-4 py-2 md:px-6 md:py-2 mt-2 md:mt-4 w-32 md:w-40 text-sm">
+                  My Dokumentasi
                 </button>
               </div>
             </div>
@@ -420,7 +422,7 @@ const Navbar = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
                   {/* Front End */}
                   <motion.div
-                    className="bg-[#e0f7fa]/10 text-black rounded-xl p-4 flex flex-col items-center  border border-black/80"
+                    className="bg-black/10 text-black rounded-xl p-4 flex flex-col items-center  border border-black/80"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -469,16 +471,16 @@ const Navbar = () => {
                     </div>
                   </motion.div>
 
-                  {/* Back End */}
+                  { /* Back End */ }
                   <motion.div
-                    className="bg-[#ffebee]/80 text-black rounded-xl p-4 flex flex-col items-center"
+                    className="bg-green-900/80 text-black rounded-xl p-4 flex flex-col items-center border border-white"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
                   >
                     <FaDatabase size={40} className="text-red-500/90" />
                     <div className="mt-6 text-center">
-                      <div className="font-semibold text-black">Back End </div>
+                      <div className="font-semibold text-white">Back End </div>
                       <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-1 space-y-1 items-center justify-center">
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-1 h-6">
                           <SiNodedotjs className="text-blue-500" />
@@ -498,7 +500,9 @@ const Navbar = () => {
                         </div>
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
                           <IoCode className="text-purple-600" />
-                          <span className="text-black">controller app router middleware etc  </span>
+                          <span className="text-black">
+                            controller app router middleware etc{" "}
+                          </span>
                         </div>
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
                           <SiMysql className="text-gray-300" />
@@ -510,7 +514,7 @@ const Navbar = () => {
                         </div>
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
                           <SiPrisma className="text-gray-900" />
-                          <span className="text-black">prismaOrm  </span>
+                          <span className="text-black">prismaOrm </span>
                         </div>
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
                           <SiHostinger className="text-gray-900" />
@@ -522,7 +526,7 @@ const Navbar = () => {
 
                   {/* UI & UX */}
                   <motion.div
-                    className="bg-[#fff3e0]/10 text-black rounded-xl p-4 flex flex-col items-center  border border-black/80"
+                    className="bg-black/10 text-black rounded-xl p-4 flex flex-col items-center  border border-black/80"
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
@@ -532,9 +536,9 @@ const Navbar = () => {
                       <div className="font-semibold text-white">Interest </div>
                       <div className="text-sm mt-2 text-white">
                         I want to learn <br /> 1.MongoDB, 2.Svelte, 3.Framer
-                        Motion, 4.Sass, 5.mySql, 6.ux ui. <br />  I'm interested in
-                        expanding my skills in modern web development and
-                        design. 
+                        Motion, 4.Sass, 5.mySql, 6.ux ui. <br /> I'm interested
+                        in expanding my skills in modern web development and
+                        design.
                       </div>
                     </div>
                   </motion.div>
@@ -561,7 +565,7 @@ const Navbar = () => {
                 transition={{ duration: 1 }}
               >
                 <div className="h-full font-mono text-5xl">
-                  Hubungi saya jika membutuhkan Suatu
+                  Hubungi saya jika membutuhkan suatu
                 </div>
               </motion.h1>
               <motion.p
@@ -573,11 +577,14 @@ const Navbar = () => {
                 {" "}
               </motion.p>
               <motion.button
-                className="text-black/80 bg-gray-100/80 rounded-full px-2 py-1 text-sm md:text-base w-40 md:mt-2 mt-1 border border-black"
+                className="text-black/90 bg-green-100/80 rounded-full px-0 py-0 text-xl w-36 md:mt-2 mt-1 border border-black/0 flex items-center justify-center h-8 font-mono"
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 900 }}
               >
-                With email | 📧
+                {" "}
+                <Button className="rounded-full flex items-center justify-center h-8 w-36 border-black/90 border font-mono text-xl bg-green-100/90">
+                  Contact <IoMailOpen className="ml-1 text-xl" />{" "}
+                </Button>
               </motion.button>
               <motion.div
                 className="text-gray-700 text-[60px] md:text-[120px] shadow-black text-shadow mt-4 md:mt-6 justify-center flex items-center text-center"
@@ -587,28 +594,28 @@ const Navbar = () => {
               >
                 <div className="relative text-center ">
                   <h2 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 via-clr-2 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-mono ">
-                    CONTACT ME!!
+                    Contact Me...
                   </h2>
 
-                  {/* Subtext */}
+                  { /* Subtext */ }
                 </div>
-              </motion.div>{" "}
-            </div>{" "}
+              </motion.div> { " " }
+            </div> { " " } 
           </div>
-          {/* Footer page 5 */}
-          <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44">
-            <p className="text-xs md:text-sm text-center md:text-left mb-2 md:mb-0">
+          { /* Footer page 5 */ }
+          <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-xl font-mono">  
+            <p className="text-center md:text-left mb-2 md:mb-0">
               ©2024 rohman.dev | all rights reserved
             </p>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
               <motion.p
-                className="underline text-xs md:text-sm text-center md:text-left"
+                className="underline text-center md:text-left"
                 whileHover={{ scale: 1.05, color: "#ff6347" }}
               >
                 Term & Condition
               </motion.p>
               <motion.p
-                className="underline text-xs md:text-sm text-center md:text-left"
+                className="underline text-center md:text-left"
                 whileHover={{ scale: 1.05, color: "#ff6347" }}
               >
                 Privacy Policy
