@@ -64,7 +64,7 @@ const Navbar = () => {
 
       <div className="w-full px-3 fixed  sm:px-8 md:px-14 lg:px-[125px] z-50 mt-4 rounded-full mx-2">
         <motion.div
-          className="top-0 left-0 w-full py-[1.5px] flex items-center justify-between bg-green-900/90 backdrop-blur-3xl shadow-md z-50 rounded-full px-5 backdrop-saturate-150"
+          className="top-0 left-0 w-full py-[1.5px] flex items-center justify-between bg-green-900/90 backdrop-blur-3xl shadow-md z-50 rounded-full px-5 backdrop-saturate-150 border border-white/10"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -174,7 +174,7 @@ const Navbar = () => {
       </div>
       {/* About me Page 1 */}
       <div id="target-section">
-        <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-[#535c47] md:pt-28 md:pb-24 md:w-auto">
+        <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-green-900 md:pt-28 md:pb-24 md:w-auto">
           <div>
             <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between ml-5 md:px-0 items-center  ">
               {/* Text and Button */}
@@ -229,7 +229,7 @@ const Navbar = () => {
                     height={380}
                     src="https://nextui.org/images/hero-card.jpeg"
                     alt="NextUI Album Cover"
-                    className="rounded-xl shadow-2xl md:w-[1400px] md:h-[800px] m-0 p-0"
+                    className="rounded-xl md:w-[1400px] md:h-[800px] m-0 p-0"
                   />
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
                     <p className="text-3xl text-white/90">
@@ -358,10 +358,10 @@ const Navbar = () => {
                 {/* Framer Motion for smooth transitions */}
                 <motion.div
                   key={currentIndex}
-                  // initial={{ opacity: 0, x: 100 }}
-                  // animate={{ opacity: 1, x: 0 }}
-                  // exit={{ opacity: 0, x: -100 }}
-                  // transition={{ duration: 0.5 }}
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.5 }}
                   className="absolute w-full h-full bg-cover bg-no-repeat"
                   style={{
                     backgroundImage: `url(${images[currentIndex]})`,
@@ -369,34 +369,35 @@ const Navbar = () => {
                 />
 
                 {/* Text overlay */}
-                <div className="absolute bg-black/50 text-green-100 flex justify-center items-center rounded-lg p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/40 border-[1px] backdrop-blur-sm">
-                  <div className="flex justify-center text-xl">
+                <div className="absolute bg-black/50 text-green-100 flex justify-center items-center rounded-xl p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/40 border-[1px] backdrop-blur-sm">
+                  <div className="flex justify-center text-lg">
                     1 Years <br /> Pengalaman <br /> Coding
                   </div>
                 </div>
 
                 {/* Carousel controls */}
+                <div className="bg-white">
                 <button
                   onClick={handlePrev}
-                  className="absolute right-16 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm border-white/40 border-[1px] text-green-100 text-sm"
+                  className="absolute right-16 bottom-2 transform bg-black/60 h-8 w-8 rounded-full backdrop-blur-sm border-white/40 border text-green-100 text-sm flex items-center justify-center"
                 >
                   &lt;
                 </button>
                 <button
                   onClick={handleNext}
-                  className="absolute right-4 bottom-3 transform bg-black/60 px-3 py-1 rounded-full backdrop-blur-sm  border-white/40 border-[1px] text-green-100 flex justify-center text-center text-sm"
+                  className="absolute right-5 bottom-2 transform bg-black/60 h-8 w-8 rounded-full backdrop-blur-sm  border-white/40 border text-green-100 flex justify-center text-center text-sm items-center"
                 >
                   &gt;
-                </button>
+                </button> </div>
               </Box>
 
               <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start">
                 <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 text-white mb-1">
-                  Tentang web{" "}
+                  Tentang web { " " }
                 </p>
                 <h1 className="text-2xl md:text-4xl py-1 mb-5">
                   rohman.com <br /> adalah proyek portofolio fullstack pribadi{" "}
-                  <br />{" "}
+                  <br /> { " " }
                 </h1>
                 <p className="pb-1 md:mt-4 text-sm md:text-base font-mono">
                   Memulai dasar yg baik dan tidak selalu bagus tapi tetap
@@ -413,7 +414,7 @@ const Navbar = () => {
 
             {/* Page 3 */}
             <div className="space-y-20">
-              <div className="flex flex-col items-center justify-center text-center bg-[#535c47] py-40">
+              <div className="flex flex-col items-center justify-center text-center bg-green-900 py-40">
                 <p className="text-4xl text-white/80 mb-7 md:text-5xl md:w-[700px] font-mono">
                   Saya juga bisa membantu seberapa masalah project sesuai
                   keingian anda dan beragam{" "}
