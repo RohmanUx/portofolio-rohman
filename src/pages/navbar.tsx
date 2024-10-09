@@ -4,10 +4,9 @@ import "./svg/hallo.svg";
 import { motion } from "framer-motion";
 import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import necessary icons
 import { useState } from "react";
-import { BiQuestionMark } from "react-icons/bi";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
-import { IoArchiveSharp, IoArrowDownSharp } from "react-icons/io5";
+import { IoArrowDownSharp } from "react-icons/io5";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 // import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
@@ -211,7 +210,7 @@ const Navbar = () => {
                     alt="NextUI Album Cover"
                     className="rounded-xl shadow-2xl md:w-[1400px] md:h-[800px] m-0 p-0"
                   />
-                  <CardFooter className="justify-between before:bg-green-100/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 w-[calc(100%_-_8px)] shadow-small m-0 z-10 w-full h-16">
+                  <CardFooter className="justify-between before:bg-green-100/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-16">
                     <p className="text-lg text-white/80">
                     I wanna intership Contact me
                     </p>
