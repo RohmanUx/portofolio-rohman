@@ -27,6 +27,7 @@ import {
   SiPrisma,
   SiHostinger,
 } from "react-icons/si";
+import LandingPage from "./landing";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -338,7 +339,8 @@ const Navbar = () => {
             </Button>
           </div>
         </div>
-      </div>
+      </div> 
+      <LandingPage /> 
       <div className="space-y-20">
         <div className="space-y-20">
           <div className="space-y-20">
@@ -433,7 +435,7 @@ const Navbar = () => {
                     <div className="mt-6 text-center">
                       <div className="font-semibold text-white">Front End </div>
                       <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-2 space-y-2 items-center justify-center">
-                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-1 h-6">
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-2 h-6">
                           <FaCss3Alt className="text-blue-500" />
                           <span className="text-black">CSS </span>
                         </div>
@@ -484,7 +486,7 @@ const Navbar = () => {
                     <div className="mt-6 text-center">
                       <div className="font-semibold text-white">Back End </div>
                       <div className="text-xs mt-4 text-white flex flex-row flex-wrap space-x-2 space-y-2 items-center justify-center">
-                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-1 h-6">
+                        <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 mt-2 h-6">
                           <SiNodedotjs className="text-blue-500" />
                           <span className="text-black">node </span>
                         </div>
