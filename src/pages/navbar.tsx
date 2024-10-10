@@ -10,7 +10,6 @@ import {
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
-
   DropdownItem,
 } from "@nextui-org/dropdown";
 import {
@@ -178,9 +177,9 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <Button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
+            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=Halo+%2AJasterweb.com%2A%2C+Saya+ingin+konsultasi+untuk+pembuatan+website+dibidang+...&type=phone_number&app_absent=0"> <Button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
               Contract me
-            </Button>
+            </Button> </a>
           </div>
         </div>
       </div>
@@ -203,11 +202,9 @@ const Navbar = () => {
                   Ada yang bisa <br /> dibantu dibuatkan <br /> Projects web
                 </h1>
                 <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono mb-5 sm:mb-2 gap-2 sm:w-[500px] w-72">
-                  Saya seorang pengalaman pengembangan
-                                    full stack akan membantu Anda dalam mengelola
-                                   proyek secara efisien, melacak kemajuan, dan
-                                    menerapkan aplikasi dengan lancar
-                                    sesuai keinginan bersama
+                  Saya seorang pengalaman pengembangan full stack akan membantu
+                  Anda dalam mengelola proyek secara efisien, melacak kemajuan,
+                  dan menerapkan aplikasi dengan lancar sesuai keinginan bersama
                 </p>
                 <a href="https://drive.google.com/file/d/1wvxBA4zNG3tm6fNPh-4OYqnrMxRgFHpn/view?usp=sharing">
                   <Button
@@ -240,9 +237,10 @@ const Navbar = () => {
                     className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
                   />
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
-                    <p className="sm:text-2xl text-white/90 text-sm">
+                    <p className="sm:text-2xl text-white/90 text-sm mx-1">
                       I wanna intership Contact me
                     </p>
+                    <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=Halo+%2AJasterweb.com%2A%2C+...&type=phone_number&app_absent=0"> 
                     <Button
                       className="text-tiny text-black bg-black/0 border border-black/90 bg-white rounded-full px-5 sm:m-0 ml-2"
                       variant="flat"
@@ -251,7 +249,7 @@ const Navbar = () => {
                       size="sm"
                     >
                       Contact me
-                    </Button>
+                    </Button> </a>
                   </CardFooter>
                 </Card>
               </motion.div>
@@ -422,7 +420,7 @@ const Navbar = () => {
                 <Dropdown>
                   <DropdownTrigger>
                     <Button className="bg-white text-black rounded-full mt-1 md:mt-3  w-[135px] text-sm border border-black h-7 flex items-center justify-center sm:mb-0 mb-2">
-                      My portfolio <IoDocument className="text-sm"/>
+                      My portfolio <IoDocument className="text-sm" />
                     </Button>
                   </DropdownTrigger>
                   <DropdownMenu
@@ -481,8 +479,11 @@ const Navbar = () => {
                         </Button>{" "}
                       </div>
                     </DropdownItem>
-                    <DropdownItem key="edit" className="w-60">saya serius bahwa saya bisa menjelaskan semua apa yang udah ditulis didokumentasinya</DropdownItem>
-                                      </DropdownMenu>
+                    <DropdownItem key="edit" className="w-60">
+                      saya serius bahwa saya bisa menjelaskan semua apa yang
+                      udah ditulis didokumentasinya
+                    </DropdownItem>
+                  </DropdownMenu>
                 </Dropdown>
               </div>
             </div>
