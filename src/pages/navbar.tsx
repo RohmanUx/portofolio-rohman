@@ -52,9 +52,9 @@ const Navbar = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
   const scrollToSection = () => {
-    const section = document.getElementById ("target-section");
+    const section = document.getElementById("target-section");
     if (section) {
-      section.scrollIntoView ({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -73,7 +73,7 @@ const Navbar = () => {
             <h1 className="text-2xl sm:text-2xl font-medium text-gray-100/90 ml-0 font-mono border-r-2 border-white/90 pr-2 h-5 text-center flex items-center">
               Rohman.
               <span className=" text-orange-100/90 font-medium bg-black/0">
-                com { " " }  
+                com{" "}
               </span>
             </h1>
           </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
                   to="/"
                   className="hover:text-green-100/80 transition-colors flex items-center text-center"
                 >
-                  Help { " " }
+                  Help{" "}
                   <IoArrowDownSharp className="ml-2 text-sm text-white text-center" />
                 </Link>
               </li>
@@ -176,7 +176,7 @@ const Navbar = () => {
       <div id="target-section">
         <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-green-900 md:pt-28 md:pb-24 md:w-auto">
           <div>
-            <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between ml-5 md:px-0 items-center  ">
+            <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between md:px-0 items-center  ">
               {/* Text and Button */}
               <motion.div
                 className="flex flex-col max-w-full md:px-0 md:max-w-4xl items-center justify-center  py-10  text-[#F6F6F6] text-sm sm:w-full xl:flex xl:justify-start xl:items-start"
@@ -225,12 +225,12 @@ const Navbar = () => {
                   className="border-none mx-0 p-0 skeleton"
                 >
                   <Image
-  width={400}
-  height={400}
-  src=""
-  alt="NextUI Album Cover"
-  className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
-/>
+                    width={400}
+                    height={400}
+                    src=""
+                    alt="NextUI Album Cover"
+                    className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
+                  />
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
                     <p className="text-3xl text-white/90">
                       I wanna intership Contact me
@@ -370,7 +370,7 @@ const Navbar = () => {
 
                 {/* Text overlay */}
                 <div className="absolute bg-black/10 text-green-100 flex justify-center items-center rounded-xl p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/10 border-[1px] backdrop-blur-sm">
-                  <div className="flex justify-center text-lg">
+                  <div className="flex justify-center text-xs sm:text-lg">
                     1 Years <br /> Pengalaman <br /> Coding
                   </div>
                 </div>
@@ -394,11 +394,11 @@ const Navbar = () => {
 
               <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start text-white">
                 <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 mb-1">
-                  Tentang web { " " }
+                  Tentang web{" "}
                 </p>
                 <h1 className="text-2xl md:text-4xl py-1 mb-5">
-                  rohman.com <br /> adalah proyek portofolio fullstack pribadi { " " }   
-                  <br /> { " " }
+                  rohman.com <br /> adalah proyek portofolio fullstack pribadi{" "}
+                  <br />{" "}
                 </h1>
                 <p className="pb-1 md:mt-4 text-sm md:text-base font-mono text-green-100">
                   Memulai dasar yg baik dan tidak selalu bagus tapi tetap
@@ -413,16 +413,16 @@ const Navbar = () => {
               </div>
             </div>
 
-            { /* Page 3 */ }
+            {/* Page 3 */}
             <div className="space-y-20">
               <div className="flex flex-col items-center justify-center text-center bg-green-900 py-40">
                 <p className="text-4xl text-white/80 mb-7 md:text-5xl md:w-[700px] font-mono">
                   Saya juga bisa membantu seberapa masalah project sesuai
-                  keingian anda dan beragam { " " }
+                  keingian anda dan beragam{" "}
                 </p>
-                { /* Icon grid */ }
+                {/* Icon grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
-                  { /* Front End */ }
+                  {/* Front End */}
                   <motion.div
                     className="bg-black/60 text-black rounded-2xl p-4 flex flex-col items-center  border border-black/20"
                     variants={cardVariants}
@@ -620,4 +620,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
