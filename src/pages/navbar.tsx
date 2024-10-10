@@ -62,7 +62,7 @@ const Navbar = () => {
     <div>
       {/*navbar*/}
 
-      <div className="w-full px-3 fixed  sm:px-8 md:px-14 lg:px-[125px] z-50 mt-4 rounded-full mx-2">
+      <div className="w-full px-3 fixed  sm:px-8 md:px-14 lg:px-[125px] z-50 mt-4 rounded-full mx-0">
         <motion.div
           className="top-0 left-0 w-full py-[1.5px] flex items-center justify-between bg-green-900/90 backdrop-blur-3xl shadow-md z-50 rounded-full px-5 backdrop-saturate-150 border border-white/10"
           initial={{ opacity: 0, y: -50 }}
@@ -179,18 +179,18 @@ const Navbar = () => {
             <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between md:px-0 items-center  ">
               {/* Text and Button */}
               <motion.div
-                className="flex flex-col max-w-full md:px-0 md:max-w-4xl items-center justify-center  py-10  text-[#F6F6F6] text-sm sm:w-full xl:flex xl:justify-start xl:items-start"
+                className="flex flex-col max-w-full md:px-0 md:max-w-4xl items-center justify-center  py-10  text-[#F6F6F6] text-sm sm:w-full xl:flex xl:justify-start xl:items-start px-3"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <p className=" bg-green-900/80 xl:py-[1px] border-[#F6F6F6]/90 border-[1px] w-20 sm:text-sm sm:w-20 flex justify-center items-center rounded-full text-white/90 py-[1px] font-mono mb-2">
+                <p className=" bg-green-900/80 xl:py-[1px] border-[#F6F6F6]/90 border-[1px] w-20 sm:text-sm sm:w-20 flex justify-center items-center rounded-full text-white/90 py-[1px] font-mono sm:mb-2 mb-4">
                   Layanan
                 </p>
-                <h1 className="text-5xl  text-[#F6F6F6] md:text-4xl md:text-gray-100 py-0  md:text-left text-center font-mono mb-5">
+                <h1 className="text-5xl  text-[#F6F6F6] md:text-4xl md:text-gray-100 py-0  md:text-left text-center font-mono sm:mb-5 mb-8">
                   Ada yang bisa <br /> dibantu dibuatkan <br /> Projects web
                 </h1>
-                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono pb-2">
+                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono mb-5 sm:mb-2">
                   Saya seorang pengalaman pengembangan
                   <br className="hidden md:block" />
                   full stack akan membantu Anda dalam mengelola
@@ -205,7 +205,7 @@ const Navbar = () => {
                   <Button
                     color="primary"
                     variant="bordered"
-                    className="py-1 h-9 rounded-full hover:bg-green-100 transition-colors w-20 md:w-28 border border-black/90 text-black/90 bg-white/90 font-mono"
+                    className="py-1 h-9 rounded-full hover:bg-green-100 transition-colors w-20 md:w-28 border border-black/90 text-black/90 bg-white/90 font-mono sm:px-1 px-14"
                   >
                     My resume
                   </Button>{" "}
@@ -232,11 +232,11 @@ const Navbar = () => {
                     className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
                   />
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
-                    <p className="text-3xl text-white/90">
+                    <p className="sm:text-3xl text-white/90 text-sm">
                       I wanna intership Contact me
                     </p>
                     <Button
-                      className="text-tiny text-black bg-black/0 border border-black/90 bg-white rounded-full px-5"
+                      className="text-tiny text-black bg-black/0 border border-black/90 bg-white rounded-full px-5 sm:m-0 ml-2"
                       variant="flat"
                       color="default"
                       radius="lg"
@@ -250,14 +250,14 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Quote and Experience */}
+          { /* Quote and Experience */ }
           <motion.div
-            className="mt-8 max-w-full p-4 bg-green-100/90 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-6 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 border border-black/90 "
+            className="mt-8 max-w-full p-4 bg-green-100/90 rounded-2xl shadow-lg flex flex-col md:flex-row items-center sm:gap-6 gap-0 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 border border-black/90 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-sm text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/20 text-center md:text-left font-mono">
+            <p className="text-sm text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/90 text-center md:text-left font-mono mb-4 mt-2 sm:mb-0 sm:mt-0">
               <q>
                 berpengalaman writting{" "}
                 <mark className="bg-green-900/90 text-white">
@@ -407,7 +407,7 @@ const Navbar = () => {
                 <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black">
                   My Portfolio
                 </button>
-                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black">
+                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-40 md:w-40 text-sm border border-black">
                   My Dokumentasi
                 </button>
               </div>
