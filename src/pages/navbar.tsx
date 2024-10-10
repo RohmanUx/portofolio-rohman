@@ -26,8 +26,7 @@ import {
   SiMongodb,
   SiPrisma,
   SiHostinger,
-} from "react-icons/si";
-import LandingPage from "./landing";
+} from "react-icons/si" ;  
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -340,8 +339,7 @@ const Navbar = () => {
           </div>
         </div>
       </div> 
-      <LandingPage /> 
-      <div className="space-y-20">
+            <div className="space-y-20">
         <div className="space-y-20">
           <div className="space-y-20">
             {/* Page 2 */}
