@@ -52,9 +52,9 @@ const Navbar = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
   const scrollToSection = () => {
-    const section = document.getElementById("target-section");
+    const section = document.getElementById ("target-section");
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView ({ behavior: "smooth" });
     }
   };
 
@@ -73,7 +73,7 @@ const Navbar = () => {
             <h1 className="text-2xl sm:text-2xl font-medium text-gray-100/90 ml-0 font-mono border-r-2 border-white/90 pr-2 h-5 text-center flex items-center">
               Rohman.
               <span className=" text-orange-100/90 font-medium bg-black/0">
-                com{" "}
+                com { " " }  
               </span>
             </h1>
           </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
                   to="/"
                   className="hover:text-green-100/80 transition-colors flex items-center text-center"
                 >
-                  Help{" "}
+                  Help { " " }
                   <IoArrowDownSharp className="ml-2 text-sm text-white text-center" />
                 </Link>
               </li>
@@ -222,22 +222,22 @@ const Navbar = () => {
                 <Card
                   isFooterBlurred
                   radius="lg"
-                  className="border-none mx-0 p-0"
+                  className="border-none mx-0 p-0 skeleton"
                 >
                   <Image
-                    isBlurred
-                    width={580}
-                    height={380}
-                    src="https://nextui.org/images/hero-card.jpeg"
+                    width={400}
+                    height={400}
+                    src=""
                     alt="NextUI Album Cover"
-                    className="rounded-xl md:w-[1400px] md:h-[800px] m-0 p-0 w-[1200px]"
+                    className="rounded-xl md:w-[800px] md:h-[800px] m-0 p-0 w-[1200px] "
                   />
+
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
                     <p className="text-3xl text-white/90">
                       I wanna intership Contact me
                     </p>
                     <Button
-                      className="text-tiny text-black bg-black/0 border border-black/90 bg-white"
+                      className="text-tiny text-black bg-black/0 border border-black/90 bg-white rounded-full px-5"
                       variant="flat"
                       color="default"
                       radius="lg"
@@ -299,7 +299,7 @@ const Navbar = () => {
               variant="shadow"
               className="bg-green-900/90 px-4 py-1 h-8 rounded-full text-center text-gray-100 text-sm md:text-base border border-white/60"
             >
-              glassdoor 
+              glassdoor
             </Button>
             <Button
               color="primary"
@@ -393,13 +393,13 @@ const Navbar = () => {
                 </div>
               </Box>
 
-              <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start">
-                <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 text-white mb-1">
-                  Tentang web{" "}
+              <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start text-white">
+                <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 mb-1">
+                  Tentang web { " " }
                 </p>
                 <h1 className="text-2xl md:text-4xl py-1 mb-5">
-                  rohman.com <br /> adalah proyek portofolio fullstack pribadi{" "}
-                  <br />{" "}
+                  rohman.com <br /> adalah proyek portofolio fullstack pribadi { " " }   
+                  <br /> { " " }
                 </h1>
                 <p className="pb-1 md:mt-4 text-sm md:text-base font-mono">
                   Memulai dasar yg baik dan tidak selalu bagus tapi tetap
@@ -552,7 +552,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          <div className="flex flex-col items-center bg-white w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0 ">
+          <div className="flex flex-col items-center w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0 ">
             <button
               onClick={scrollToSection}
               className="fixed lg:bottom-10 lg:right-28 right-5 bottom-2 bg-green-100/90 text-gray-900/90 p-1 lg:p-1 rounded-full shadow-lg flex items-center justify-center hover:bg-green-400/90 focus:outline-none z-20 backdrop-blur-3xl border-gray-900/90 border-[1px] "
@@ -567,7 +567,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
-                <div className="h-full font-mono text-2xl">
+                <div className="h-full font-mono text-2xl text-white/90">
                   Hubungi saya jika membutuhkan suatu
                 </div>
               </motion.h1>
