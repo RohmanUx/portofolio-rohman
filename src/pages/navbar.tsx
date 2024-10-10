@@ -370,7 +370,7 @@ const Navbar = () => {
                 />
 
                 {/* Text overlay */}
-                <div className="absolute bg-black/50 text-green-100 flex justify-center items-center rounded-xl p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/40 border-[1px] backdrop-blur-sm">
+                <div className="absolute bg-black/10 text-green-100 flex justify-center items-center rounded-xl p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/10 border-[1px] backdrop-blur-sm">
                   <div className="flex justify-center text-lg">
                     1 Years <br /> Pengalaman <br /> Coding
                   </div>
@@ -414,16 +414,16 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Page 3 */}
+            { /* Page 3 */ }
             <div className="space-y-20">
               <div className="flex flex-col items-center justify-center text-center bg-green-900 py-40">
                 <p className="text-4xl text-white/80 mb-7 md:text-5xl md:w-[700px] font-mono">
                   Saya juga bisa membantu seberapa masalah project sesuai
-                  keingian anda dan beragam{" "}
+                  keingian anda dan beragam { " " }
                 </p>
-                {/* Icon grid */}
+                { /* Icon grid */ }
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-4 md:mx-52">
-                  {/* Front End */}
+                  { /* Front End */ }
                   <motion.div
                     className="bg-black/60 text-black rounded-2xl p-4 flex flex-col items-center  border border-black/20"
                     variants={cardVariants}
@@ -596,7 +596,7 @@ const Navbar = () => {
             </div>{" "}
           </div>
           {/* Footer page 5 */}
-          <div className="w-full flex flex-col md:flex-row justify-between border-t border-gray-400 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-lg font-mono">
+          <div className="w-full flex flex-col md:flex-row justify-between border-t border-white/10 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-lg font-mono text-white/90">
             <p className="text-center md:text-left mb-2 md:mb-0">
               ©2024 rohman.dev all rights reserved
             </p>
@@ -621,4 +621,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar; 
