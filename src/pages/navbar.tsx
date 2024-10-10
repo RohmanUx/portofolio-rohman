@@ -401,7 +401,7 @@ const Navbar = () => {
                   rohman.com <br /> adalah proyek portofolio fullstack pribadi { " " }   
                   <br /> { " " }
                 </h1>
-                <p className="pb-1 md:mt-4 text-sm md:text-base font-mono">
+                <p className="pb-1 md:mt-4 text-sm md:text-base font-mono text-green-100">
                   Memulai dasar yg baik dan tidak selalu bagus tapi tetap
                   berusaha terbaik walaupun gagal{" "}
                 </p>
