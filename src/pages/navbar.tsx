@@ -348,13 +348,13 @@ const Navbar = () => {
         {" "} <div className="mx-80"> 
         <div className="animate-marquee-right whitespace-nowrap dark:text-white/90 font-mono tracking-wider text-lg w-full ">
           {" "}
-          please intership fullstack to me!! 
+          please intership fullstack to me !! 
         </div>{" "}
       </div> </div>
       <div className="space-y-20">
         <div className="space-y-20">
           <div className="space-y-20">
-            {/* Page 2 */}
+            { /* Page 2 */ }
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full ">
               <Box
                 className="relative rounded-2xl w-full h-[300px] md:w-[600px] md:h-[600px] overflow-hidden"
