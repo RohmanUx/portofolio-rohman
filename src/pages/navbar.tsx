@@ -344,13 +344,13 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className=" z-10 bg-black/0 bg-opacity-80 border-white/60 border backdrop-blur-3xl  w-full px-52 mb-7 h-7">
-        {" "} <div className="mx-80"> 
-        <div className="animate-marquee-right whitespace-nowrap dark:text-white/90 font-mono tracking-wider text-lg w-full ">
-          {" "}
-          please intership fullstack to me !! 
-        </div>{" "}
-      </div> </div>
+      <div className="relative z-10 bg-black/0 bg-opacity-80 border-white/60 border backdrop-blur-3xl w-full px-0 md:px-26 sm:px-4 lg:px-10 mb-7 h-auto overflow-hidden">
+  <div className="mx-auto w-full">
+    <div className="animate-marquee-right whitespace-nowrap dark:text-white/90 font-mono tracking-wider text-sm sm:text-base lg:text-lg">
+      please intership fullstack to me !!
+    </div>
+  </div>
+</div>
       <div className="space-y-20">
         <div className="space-y-20">
           <div className="space-y-20">

@@ -43,7 +43,7 @@ export default {
       },
       animation: {
         "aurora-gradient": "aurora-gradient 2s ease-in-out infinite",
-        "marquee-right": "marquee-right 8s linear infinite",
+        "marquee-right": "marquee-right 14s linear infinite",
       },
     },
     //...
