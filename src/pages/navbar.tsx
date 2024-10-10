@@ -6,7 +6,7 @@ import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import ne
 import { useState } from "react";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
-import { IoArrowDownSharp, IoCode, IoMailOpen } from "react-icons/io5";
+import { IoArrowDownSharp, IoCode, IoDocument, IoMailOpen } from "react-icons/io5";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 // import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
@@ -404,12 +404,12 @@ const Navbar = () => {
                   Memulai dasar yg baik dan tidak selalu bagus tapi tetap
                   berusaha terbaik walaupun gagal{" "}
                 </p>
-                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-32 md:w-40 text-sm border border-black">
-                  My Portfolio
-                </button>
-                <button className="bg-white text-black rounded-full px-4 py-2 md:px-6 md:py-2 mt-1 md:mt-3 w-40 md:w-40 text-sm border border-black">
-                  My Dokumentasi
-                </button>
+                <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-36 text-sm border border-black h-7 flex items-center justify-center">
+                  My portfolio <IoDocument />
+                </Button>
+                <Button className="bg-white text-black rounded-full mt-0 md:mt-4 w-32 md:w-44 text-sm border border-black h-7 flex items-center justify-center">
+                  My dokumentasi  <IoDocument />
+                </Button>
               </div>
             </div>
 
