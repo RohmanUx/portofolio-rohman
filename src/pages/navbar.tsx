@@ -7,6 +7,13 @@ import { useState } from "react";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
 import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownSection,
+  DropdownItem,
+} from "@nextui-org/dropdown";
+import {
   IoArrowDownSharp,
   IoCode,
   IoDocument,
@@ -197,7 +204,7 @@ const Navbar = () => {
                 </h1>
                 <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono mb-5 sm:mb-2">
                   Saya seorang pengalaman pengembangan
-                  <br className="hidden md:block" />
+                  <br className="hidden md:block mx-2" />
                   full stack akan membantu Anda dalam mengelola
                   <br className="hidden md:block" />
                   proyek secara efisien, melacak kemajuan, dan
@@ -345,16 +352,16 @@ const Navbar = () => {
         </div>
       </div>
       <div className="relative z-10 bg-black/0 bg-opacity-80 border-white/60 border backdrop-blur-3xl w-full px-0 md:px-26 sm:px-4 lg:px-10 mb-7 h-auto overflow-hidden">
-  <div className="mx-auto w-full">
-    <div className="animate-marquee-right whitespace-nowrap dark:text-white/90 font-mono tracking-wider text-sm sm:text-base lg:text-lg">
-      please intership fullstack to me !!
-    </div>
-  </div>
-</div>
+        <div className="mx-auto w-full">
+          <div className="animate-marquee-right whitespace-nowrap dark:text-white/90 font-mono tracking-wider text-sm sm:text-base lg:text-lg">
+            please intership fullstack to me !!
+          </div>
+        </div>
+      </div>
       <div className="space-y-20">
         <div className="space-y-20">
           <div className="space-y-20">
-            { /* Page 2 */ }
+            {/* Page 2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full ">
               <Box
                 className="relative rounded-2xl w-full h-[300px] md:w-[600px] md:h-[600px] overflow-hidden"
@@ -404,24 +411,90 @@ const Navbar = () => {
                 </div>
               </Box>
 
-              <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start text-white">
-                <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 mb-1">
+              <div className="flex flex-col justify-center px-4 md:px-16 md:text-left text-center items-center md:items-start text-white sm:mt-4 mt-8">
+                <p className="text-sm md:text-sm border-white border px-4 rounded-full xl:mt-0 mt-0 h-7 font-mono flex items-center bg-green-900 sm:mb-1 mb-3">
                   Tentang web{" "}
                 </p>
                 <h1 className="text-2xl md:text-4xl py-1 mb-5">
                   rohman.com <br /> adalah proyek portofolio fullstack pribadi{" "}
                   <br />{" "}
                 </h1>
-                <p className="pb-1 md:mt-4 text-sm md:text-base font-mono text-green-100">
-                  Memulai dasar yg baik dan tidak selalu bagus tapi tetap
+                <p className="pb-1 md:mt-4 text-sm md:text-base font-mono text-green-100 sm:mb-0 mb-3">
+                  Memulai dasar yg baik dan kadang tidak selalu bagus tapi tetap
                   berusaha terbaik walaupun gagal{" "}
                 </p>
-                <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-36 text-sm border border-black h-7 flex items-center justify-center">
-                  My portfolio <IoDocument />
-                </Button>
-                <Button className="bg-white text-black rounded-full mt-0 md:mt-4 w-32 md:w-44 text-sm border border-black h-7 flex items-center justify-center">
-                  My dokumentasi <IoDocument />
-                </Button>
+                <Dropdown>
+                  <DropdownTrigger>
+                    <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-36 text-sm border border-black h-7 flex items-center justify-center sm:mb-0 mb-2">
+                      My portfolio <IoDocument />
+                    </Button>
+                  </DropdownTrigger>
+                  <DropdownMenu
+                    aria-label="Example with disabled actions"
+                    disabledKeys={["edit", "delete"]}
+                    className="bg-black"
+                  >
+                    <DropdownItem
+                      key="text-danger"
+                      className="fllex justify-start"
+                    >
+                      Portofolio:
+                      <div className="flex flex-col justify-start">
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-24 text-sm border border-black h-7 flex items-center justify-center">
+                          1.Blog-luno
+                        </Button>
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-36 text-sm border border-black h-7 flex items-center justify-center">
+                          2.Company-profile{" "}
+                        </Button>{" "}
+                      </div>
+                    </DropdownItem>
+                    <DropdownItem key="edit">
+                      Portofolio hasil kerja:
+                    </DropdownItem>
+                    <DropdownItem
+                      key="delete"
+                      className="text-danger"
+                      color="danger"
+                    >
+                      <div className="text-red-100">belum ada</div>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+                <Dropdown>
+                  <DropdownTrigger>
+                    <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-44 text-sm border border-black h-7 flex items-center justify-center">
+                      My dokumentasi <IoDocument />
+                    </Button>
+                  </DropdownTrigger>
+                  <DropdownMenu
+                    aria-label="Example with disabled actions"
+                    disabledKeys={["edit", "delete"]}
+                    className="bg-black"
+                  >
+                    <DropdownItem
+                      key="text-danger"
+                      className="fllex justify-start"
+                    >
+                      dokumentasi:
+                      <div className="flex flex-col justify-start">
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-20 text-sm border border-black h-7 flex items-center justify-center">
+                          1.frontend
+                        </Button>
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-20 text-sm border border-black h-7 flex items-center justify-center">
+                          2.backend
+                        </Button>{" "}
+                      </div>
+                    </DropdownItem>
+                    <DropdownItem key="edit">Prestasi:</DropdownItem>
+                    <DropdownItem
+                      key="delete"
+                      className="text-danger"
+                      color="danger"
+                    >
+                      <div className="text-red-100">belum ada</div>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
               </div>
             </div>
 

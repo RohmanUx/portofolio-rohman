@@ -1,7 +1,7 @@
 // Importing only once from the correct source
-const { nextui } = require("@nextui-org/theme");
-import daisyui from "daisyui";
-
+import daisyui from "daisyui"; 
+// import { nextui } from "@nextui-org/system";
+import { nextui } from "@nextui-org/theme";
 /** @type {import('tailwindcss').Config} */
 export default {
   plugins: [nextui()], // Using the single instance of nextui
