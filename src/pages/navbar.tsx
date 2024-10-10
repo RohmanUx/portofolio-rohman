@@ -10,7 +10,7 @@ import {
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
-  DropdownSection,
+
   DropdownItem,
 } from "@nextui-org/dropdown";
 import {
@@ -202,16 +202,12 @@ const Navbar = () => {
                 <h1 className="text-5xl  text-[#F6F6F6] md:text-4xl md:text-gray-100 py-0  md:text-left text-center font-mono sm:mb-5 mb-8">
                   Ada yang bisa <br /> dibantu dibuatkan <br /> Projects web
                 </h1>
-                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono mb-5 sm:mb-2">
+                <p className="text-base text-green-100 md:text-base md:text-left text-center md:items-start items-center font-mono mb-5 sm:mb-2 gap-2 sm:w-[500px] w-72">
                   Saya seorang pengalaman pengembangan
-                  <br className="hidden md:block mx-2" />
-                  full stack akan membantu Anda dalam mengelola
-                  <br className="hidden md:block" />
-                  proyek secara efisien, melacak kemajuan, dan
-                  <br className="hidden md:block" />
-                  menerapkan aplikasi dengan lancar
-                  <br className="hidden md:block" />
-                  sesuai keinginan bersama
+                                    full stack akan membantu Anda dalam mengelola
+                                   proyek secara efisien, melacak kemajuan, dan
+                                    menerapkan aplikasi dengan lancar
+                                    sesuai keinginan bersama
                 </p>
                 <a href="https://drive.google.com/file/d/1wvxBA4zNG3tm6fNPh-4OYqnrMxRgFHpn/view?usp=sharing">
                   <Button
@@ -425,8 +421,8 @@ const Navbar = () => {
                 </p>
                 <Dropdown>
                   <DropdownTrigger>
-                    <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-36 text-sm border border-black h-7 flex items-center justify-center sm:mb-0 mb-2">
-                      My portfolio <IoDocument />
+                    <Button className="bg-white text-black rounded-full mt-1 md:mt-3  w-[135px] text-sm border border-black h-7 flex items-center justify-center sm:mb-0 mb-2">
+                      My portfolio <IoDocument className="text-sm"/>
                     </Button>
                   </DropdownTrigger>
                   <DropdownMenu
@@ -440,10 +436,10 @@ const Navbar = () => {
                     >
                       Portofolio:
                       <div className="flex flex-col justify-start">
-                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-24 text-sm border border-black h-7 flex items-center justify-center">
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           1.Blog-luno
                         </Button>
-                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-36 text-sm border border-black h-7 flex items-center justify-center">
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-36 text-sm border border-black h-7 flex items-center justify-center">
                           2.Company-profile{" "}
                         </Button>{" "}
                       </div>
@@ -462,7 +458,7 @@ const Navbar = () => {
                 </Dropdown>
                 <Dropdown>
                   <DropdownTrigger>
-                    <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-44 text-sm border border-black h-7 flex items-center justify-center">
+                    <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-40 text-sm border border-black h-7 flex items-center justify-center">
                       My dokumentasi <IoDocument />
                     </Button>
                   </DropdownTrigger>
@@ -477,23 +473,16 @@ const Navbar = () => {
                     >
                       dokumentasi:
                       <div className="flex flex-col justify-start">
-                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-20 text-sm border border-black h-7 flex items-center justify-center">
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           1.frontend
                         </Button>
-                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-32 md:w-20 text-sm border border-black h-7 flex items-center justify-center">
+                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           2.backend
                         </Button>{" "}
                       </div>
                     </DropdownItem>
-                    <DropdownItem key="edit">Prestasi:</DropdownItem>
-                    <DropdownItem
-                      key="delete"
-                      className="text-danger"
-                      color="danger"
-                    >
-                      <div className="text-red-100">belum ada</div>
-                    </DropdownItem>
-                  </DropdownMenu>
+                    <DropdownItem key="edit" className="w-60">saya serius bahwa saya bisa menjelaskan semua apa yang udah ditulis didokumentasinya</DropdownItem>
+                                      </DropdownMenu>
                 </Dropdown>
               </div>
             </div>
