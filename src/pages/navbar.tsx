@@ -111,16 +111,17 @@ const Navbar = () => {
                   to="/"
                   className="hover:text-green-100/80 transition-colors flex items-center text-center"
                 >
-                  Help{" "}
+                  Help { " " }
                   <IoArrowDownSharp className="ml-2 text-sm text-white text-center" />
                 </Link>
               </li>
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
+           <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=Halo+%2AJasterweb.com%2A%2C+...&type=phone_number&app_absent=0"> 
             <Button className="bg-black/90 text-white/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-white transition-colors border-2 border-black/90 hover:text-black/90 font-mono">
-              Contract <AiOutlineWhatsApp className="ml-1" />
-            </Button>
+              Contract <AiOutlineWhatsApp className="ml-1" /> 
+            </Button>  </a>
           </div>
           <button
             className="md:hidden flex items-center"
