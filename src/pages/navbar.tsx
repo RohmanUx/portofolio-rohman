@@ -6,7 +6,12 @@ import { FaCode, FaDatabase, FaPencilRuler } from "react-icons/fa"; // Import ne
 import { useState } from "react";
 import Box from "@mui/system/Box";
 import { ArrowUpIcon } from "@radix-ui/react-icons"; // Import Radix UI icon
-import { IoArrowDownSharp, IoCode, IoDocument, IoMailOpen } from "react-icons/io5";
+import {
+  IoArrowDownSharp,
+  IoCode,
+  IoDocument,
+  IoMailOpen,
+} from "react-icons/io5";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 // import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
@@ -26,7 +31,7 @@ import {
   SiMongodb,
   SiPrisma,
   SiHostinger,
-} from "react-icons/si" ;  
+} from "react-icons/si";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -232,7 +237,7 @@ const Navbar = () => {
                     className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
                   />
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
-                    <p className="sm:text-3xl text-white/90 text-sm">
+                    <p className="sm:text-2xl text-white/90 text-sm">
                       I wanna intership Contact me
                     </p>
                     <Button
@@ -250,7 +255,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          { /* Quote and Experience */ }
+          {/* Quote and Experience */}
           <motion.div
             className="mt-8 max-w-full p-4 bg-green-100/90 rounded-2xl shadow-lg flex flex-col md:flex-row items-center sm:gap-6 gap-0 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 border border-black/90 "
             initial={{ opacity: 0, y: 50 }}
@@ -338,8 +343,15 @@ const Navbar = () => {
             </Button>
           </div>
         </div>
-      </div> 
-            <div className="space-y-20">
+      </div>
+      <div className=" z-10 bg-black/0 bg-opacity-80 border-white/60 border backdrop-blur-3xl  w-full px-52 mb-7 h-7">
+        {" "} <div className="mx-80"> 
+        <div className="animate-marquee-right whitespace-nowrap dark:text-white/90 font-mono tracking-wider text-lg w-full ">
+          {" "}
+          please intership fullstack to me!! 
+        </div>{" "}
+      </div> </div>
+      <div className="space-y-20">
         <div className="space-y-20">
           <div className="space-y-20">
             {/* Page 2 */}
@@ -370,7 +382,7 @@ const Navbar = () => {
 
                 {/* Text overlay */}
                 <div className="absolute bg-black/10 text-green-100 flex justify-center items-center rounded-xl p-4 top-[10px] right-[10px] md:top-[15px] md:right-[15px] w-24 h-16 md:w-32 md:h-24 border-white/10 border-[1px] backdrop-blur-sm">
-                  <div className="flex justify-center text-xs sm:text-lg">
+                  <div className="flex justify-center text-xs sm:text-base">
                     1 Years <br /> Pengalaman <br /> Coding
                   </div>
                 </div>
@@ -408,7 +420,7 @@ const Navbar = () => {
                   My portfolio <IoDocument />
                 </Button>
                 <Button className="bg-white text-black rounded-full mt-0 md:mt-4 w-32 md:w-44 text-sm border border-black h-7 flex items-center justify-center">
-                  My dokumentasi  <IoDocument />
+                  My dokumentasi <IoDocument />
                 </Button>
               </div>
             </div>
@@ -549,7 +561,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
         <div>
           <div className="flex flex-col items-center w-full min-h-[500px] justify-start px-4 md:px-0 lg:px-0 ">
             <button

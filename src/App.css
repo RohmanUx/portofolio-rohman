@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.animate-marquee {
+    display: inline-block;
+    animation: marquee-right 10s linear infinite;
+  }
+  
