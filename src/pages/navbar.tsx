@@ -225,13 +225,12 @@ const Navbar = () => {
                   className="border-none mx-0 p-0 skeleton"
                 >
                   <Image
-                    width={400}
-                    height={400}
-                    src=""
-                    alt="NextUI Album Cover"
-                    className="rounded-xl md:w-[800px] md:h-[800px] m-0 p-0 w-[1200px] "
-                  />
-
+  width={400}
+  height={400}
+  src=""
+  alt="NextUI Album Cover"
+  className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
+/>
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
                     <p className="text-3xl text-white/90">
                       I wanna intership Contact me
