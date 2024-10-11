@@ -118,7 +118,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
-           <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=Halo+%2AJasterweb.com%2A%2C+...&type=phone_number&app_absent=0"> 
+           <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=&type=phone_number&app_absent=0"> 
             <Button className="bg-black/90 text-white/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-white transition-colors border-2 border-black/90 hover:text-black/90 font-mono">
               Contract <AiOutlineWhatsApp className="ml-1" /> 
             </Button>  </a>
@@ -178,7 +178,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=Halo+%2AJasterweb.com%2A%2C+Saya+ingin+konsultasi+untuk+pembuatan+website+dibidang+...&type=phone_number&app_absent=0"> <Button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
+            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=...&type=phone_number&app_absent=0"> <Button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
               Contract me
             </Button> </a>
           </div>
@@ -241,7 +241,7 @@ const Navbar = () => {
                     <p className="sm:text-2xl text-white/90 text-sm mx-1">
                       I wanna intership Contact me
                     </p>
-                    <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=Halo+%2AJasterweb.com%2A%2C+...&type=phone_number&app_absent=0"> 
+                    <a href="https://api.whatsapp.com/send/?phone=6285646831030&tex=...&type=phone_number&app_absent=0"> 
                     <Button
                       className="text-tiny text-black bg-black/0 border border-black/90 bg-white rounded-full px-5 sm:m-0 ml-2"
                       variant="flat"
@@ -435,12 +435,13 @@ const Navbar = () => {
                     >
                       Portofolio:
                       <div className="flex flex-col justify-start">
+                        <a href="node">
                         <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           1.Blog-luno
-                        </Button>
-                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-36 text-sm border border-black h-7 flex items-center justify-center">
+                        </Button> </a>
+                       <a href="node"> <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-36 text-sm border border-black h-7 flex items-center justify-center">
                           2.Company-profile{" "}
-                        </Button>{" "}
+                        </Button>{" "} </a> 
                       </div>
                     </DropdownItem>
                     <DropdownItem key="edit">
