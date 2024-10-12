@@ -19,7 +19,6 @@ import {
   IoMailOpen,
 } from "react-icons/io5";
 import { Button } from "@nextui-org/button";
-import { Image } from "@nextui-org/image";
 // import { nextui as myNextUI } from 'nextui'; // Use a different name to avoid conflict
 import { Card, CardFooter } from "@nextui-org/card";
 import { AiOutlineWhatsApp } from "react-icons/ai";
