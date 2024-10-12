@@ -474,9 +474,10 @@ const Navbar = () => {
                     >
                       dokumentasi:
                       <div className="flex flex-col justify-start">
-                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
+                       
+                       <a href="https://www.notion.so/Frontend-1155bb6ecfa4808aa6e1e17d204756f2?pvs=4"> <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           1.frontend
-                        </Button>
+                        </Button> </a>  
                         <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           2.backend
                         </Button>{" "}
@@ -581,7 +582,7 @@ const Navbar = () => {
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
                           <IoCode className="text-purple-600" />
                           <span className="text-black">
-                            controller app router middleware etc{" "}
+                            controller router middleware etc{" "}
                           </span>
                         </div>
                         <div className="flex items-center space-x-2 px-3 border border-black rounded-full bg-green-100/90 h-6">
