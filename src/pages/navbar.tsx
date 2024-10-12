@@ -38,8 +38,11 @@ import {
   SiPrisma,
   SiHostinger,
 } from "react-icons/si";
+import React from "react";
 
-const Navbar = () => {
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
+
+const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const images = [
     "https://th.bing.com/th/id/R.c4580930a1b10329e559757c9d7c4b5d?rik=DwAvzSSeJa3zLw&riu=http%3a%2f%2fwww.kranse.com%2fcdn%2fshop%2farticles%2ftips_for_test_anxiety_and_sat_1024x1024.jpg%3fv%3d1509392551&ehk=%2f5GsVQ4%2fn51EVdTTANIhFNEby5hgMWkitSe8QbwO2js%3d&risl=&pid=ImgRaw&r=0",
@@ -111,20 +114,21 @@ const Navbar = () => {
                   to="/"
                   className="hover:text-green-100/80 transition-colors flex items-center text-center"
                 >
-                  Help { " " }
+                  Help{" "}
                   <IoArrowDownSharp className="ml-2 text-sm text-white text-center" />
                 </Link>
               </li>
             </ul>
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
-           <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=&type=phone_number&app_absent=0"> 
-            <Button className="bg-white/90 text-black/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-white transition-colors border border-black/10 hover:text-black/90 font-mono my-1 text-sm">
-              Contract <AiOutlineWhatsApp className="ml-1" /> 
-            </Button>  </a>
+            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=&type=phone_number&app_absent=0">
+              <Button className="bg-white/90 text-black/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-white transition-colors border border-black/10 hover:text-black/90 font-mono my-1 text-sm">
+                Contract <AiOutlineWhatsApp className="ml-1" />
+              </Button>{" "}
+            </a>
           </div>
           <button
-            className="md:hidden flex items-center"
+            className="md:hidden flex items-center text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -178,14 +182,18 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=...&type=phone_number&app_absent=0"> <Button className="bg-white/90 text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 hover:bg-green-400 transition-colors border-[1px] border-black/80 rounded-full text-sm">
-              Contract me
-            </Button> </a>
+            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=...&type=phone_number&app_absent=0">
+              {" "}
+              <Button className="bg-white/90 text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 hover:bg-green-400 transition-colors border-[1px] border-black/80 rounded-full text-sm">
+                Contract me
+              </Button>{" "}
+            </a>
           </div>
         </div>
       </div>
       {/* About me Page 1 */}
       <div id="target-section">
+        <div></div>
         <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-green-900 md:pt-28 md:pb-24 md:w-auto px-7">
           <div>
             <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between md:px-0 items-center  ">
@@ -226,31 +234,27 @@ const Navbar = () => {
                 transition={{ duration: 0.5 }}
               >
                 <Card
-                  isFooterBlurred
-                  radius="lg"
-                  className="border-none mx-0 p-0 skeleton bg-[#1d232a]"
-                >
-                  <Image
-                    width={400}
-                    height={400}
-                    src=""
-                    alt="NextUI Album Cover"
+                 className="h-[400px] w-[400px] rounded-xl"                              >
+                  <Spline
                     className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
+                    scene="https://prod.spline.design/6nm-7sZFtDX2Be4b/scene.splinecode"
                   />
-                  <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20">
-                    <p className="sm:text-2xl text-white/90 text-sm mx-1">
+
+                  <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20 backdrop-blur-3xl">
+                    <p className="sm:text-2xl text-black/90 text-sm mx-1">
                       I wanna intership Contact me
                     </p>
-                    <a href="https://api.whatsapp.com/send/?phone=6285646831030&tex=...&type=phone_number&app_absent=0"> 
-                    <Button
-                      className="text-tiny text-black bg-black/0 border border-black/90 bg-white rounded-full px-5 sm:m-0 ml-2"
-                      variant="flat"
-                      color="default"
-                      radius="lg"
-                      size="sm"
-                    >
-                      Contact me
-                    </Button> </a>
+                    <a href="https://api.whatsapp.com/send/?phone=6285646831030&tex=...&type=phone_number&app_absent=0">
+                      <Button
+                        className="text-tiny text-black bg-black/0 border border-black/90 bg-white rounded-full px-5 sm:m-0 ml-2"
+                        variant="flat"
+                        color="default"
+                        radius="lg"
+                        size="sm"
+                      >
+                        Contact me
+                      </Button>{" "}
+                    </a>
                   </CardFooter>
                 </Card>
               </motion.div>
@@ -267,14 +271,17 @@ const Navbar = () => {
             <p className=" text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/90 text-center md:text-left font-mono mb-4 mt-2 sm:mb-0 sm:mt-0">
               <q className="text-sm">
                 berpengalaman writting{" "}
-             <i>  <mark className="bg-green-900/90 text-white">
+                <i>
                   {" "}
-                  javascrip, typescrip, tailwind,
-                  <br className="hidden md:block" /> React, next, prismaORM,
-                  shadcnUi, express, node, MySQL,{" "}
-                  <br className="hidden md:block" />
-                  nextUi, daisyUi, html, css, elementor
-                </mark>{" "} </i>
+                  <mark className="bg-green-900/90 text-white">
+                    {" "}
+                    javascrip, typescrip, tailwind,
+                    <br className="hidden md:block" /> React, next, prismaORM,
+                    shadcnUi, express, node, MySQL,{" "}
+                    <br className="hidden md:block" />
+                    nextUi, daisyUi, html, css, elementor
+                  </mark>{" "}
+                </i>
                 untuk website
               </q>
             </p>
@@ -427,7 +434,7 @@ const Navbar = () => {
                   <DropdownMenu
                     aria-label="Example with disabled actions"
                     disabledKeys={["edit", "delete"]}
-                    className="bg-black"
+                    className="bg-green-900/10  rounded-xl border border-white/10 backdrop-blur-3xl"
                   >
                     <DropdownItem
                       key="text-danger"
@@ -436,13 +443,16 @@ const Navbar = () => {
                       Portofolio:
                       <div className="flex flex-col justify-start">
                         <a href="https://luno-blog.vercel.app">
-                       
-                        <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
-                          1.Blog-luno
-                        </Button> </a>
-                       <a href="https://company-luno.vercel.app"> <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-36 text-sm border border-black h-7 flex items-center justify-center">
-                          2.Company-profile{" "}
-                        </Button>{" "} </a> 
+                          <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
+                            1.Blog-luno
+                          </Button>{" "}
+                        </a>
+                        <a href="https://company-luno.vercel.app">
+                          {" "}
+                          <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-36 text-sm border border-black h-7 flex items-center justify-center">
+                            2.Company-profile{" "}
+                          </Button>{" "}
+                        </a>
                       </div>
                     </DropdownItem>
                     <DropdownItem key="edit">
@@ -466,7 +476,7 @@ const Navbar = () => {
                   <DropdownMenu
                     aria-label="Example with disabled actions"
                     disabledKeys={["edit", "delete"]}
-                    className="bg-black"
+                    className="bg-green-900/10  rounded-xl border border-white/10 backdrop-blur-3xl"
                   >
                     <DropdownItem
                       key="text-danger"
@@ -474,10 +484,12 @@ const Navbar = () => {
                     >
                       dokumentasi:
                       <div className="flex flex-col justify-start">
-                       
-                       <a href="https://www.notion.so/Frontend-1155bb6ecfa4808aa6e1e17d204756f2?pvs=4"> <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
-                          1.frontend
-                        </Button> </a>  
+                        <a href="https://www.notion.so/Frontend-1155bb6ecfa4808aa6e1e17d204756f2?pvs=4">
+                          {" "}
+                          <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
+                            1.frontend
+                          </Button>{" "}
+                        </a>
                         <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           2.backend
                         </Button>{" "}
@@ -647,16 +659,17 @@ const Navbar = () => {
                 <div className="h-full font-mono text-2xl text-white/90 px-7">
                   Hubungi saya jika membutuhkan suatu
                 </div>
-              </motion.h1> 
-              <a href=" mailto:blueKraken9999@gmail.com"> 
-              <motion.button
-                className=" rounded-full flex items-center justify-center h-8 w-32 font-mono text-sm bg-white text-black/90 border border-black/90 "
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 900 }}
-              >
-                {" "}
-                Contact <IoMailOpen className="ml-2 text-sm" />{" "}
-              </motion.button> </a> 
+              </motion.h1>
+              <a href=" mailto:blueKraken9999@gmail.com">
+                <motion.button
+                  className=" rounded-full flex items-center justify-center h-8 w-32 font-mono text-sm bg-white text-black/90 border border-black/90 "
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 900 }}
+                >
+                  {" "}
+                  Contact <IoMailOpen className="ml-2 text-sm" />{" "}
+                </motion.button>{" "}
+              </a>
               <motion.div
                 className="text-black/90 text-6xl md:text-[120px] mt-4 md:mt-7 justify-center flex items-center text-center"
                 initial={{ opacity: 0 }}
@@ -664,7 +677,6 @@ const Navbar = () => {
                 transition={{ duration: 1.5 }}
               >
                 <div className="relative text-center ">
-                  
                   <h2 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 via-clr-2 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-mono ">
                     Contact Me...
                   </h2>
