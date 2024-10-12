@@ -357,7 +357,7 @@ const Navbar = () => {
         <div className="space-y-20">
           <div className="space-y-20">
             {/* Page 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full px-7">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full sm:px-0 px-7">
               <Box
                 className="relative rounded-2xl w-full h-[300px] md:w-[600px] md:h-[600px] overflow-hidden"
                 sx={{
