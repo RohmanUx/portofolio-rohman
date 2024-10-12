@@ -119,7 +119,7 @@ const Navbar = () => {
           </div>
           <div className="gap-2 sm:gap-3 md:gap-4 hidden md:flex ml-12">
            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=&type=phone_number&app_absent=0"> 
-            <Button className="bg-black/90 text-white/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-white transition-colors border-2 border-black/90 hover:text-black/90 font-mono">
+            <Button className="bg-white/90 text-black/90 py-1 px-1 sm:py-1 sm:px-4 rounded-full hover:bg-white transition-colors border border-black/10 hover:text-black/90 font-mono my-1 text-sm">
               Contract <AiOutlineWhatsApp className="ml-1" /> 
             </Button>  </a>
           </div>
@@ -144,7 +144,7 @@ const Navbar = () => {
           </button>
         </motion.div>
         <div
-          className={`fixed top-0 left-0 w-full bg-[#FFF] bg-opacity-60 backdrop-blur-lg shadow-md z-40 px-4 py-2 md:hidden transition-transform transform ${
+          className={`fixed top-0 left-0 w-full bg-black/10 bg-opacity-60 backdrop-blur-3xl shadow-md z-40 px-4 py-2 md:hidden transition-transform transform border-b border-white/10 ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -178,7 +178,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="gap-2 sm:gap-3 md:gap-4 flex flex-col py-2">
-            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=...&type=phone_number&app_absent=0"> <Button className="bg-[#F6F6F6] text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 rounded-md hover:bg-green-400 transition-colors border-[1px] border-black/80">
+            <a href="https://api.whatsapp.com/send/?phone=6285646831030&text=...&type=phone_number&app_absent=0"> <Button className="bg-white/90 text-[#1E1F24] py-2 my-2 px-3 sm:py-2 sm:px-4 hover:bg-green-400 transition-colors border-[1px] border-black/80 rounded-full text-sm">
               Contract me
             </Button> </a>
           </div>
@@ -186,7 +186,7 @@ const Navbar = () => {
       </div>
       {/* About me Page 1 */}
       <div id="target-section">
-        <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-green-900 md:pt-28 md:pb-24 md:w-auto">
+        <div className="flex flex-col items-center min-h-full pt-16 pb-20 w-full bg-green-900 md:pt-28 md:pb-24 md:w-auto px-7">
           <div>
             <div className="flex flex-col justify-center md:flex-row md:items-start w-full md:w-[1205px] md:justify-between md:px-0 items-center  ">
               {/* Text and Button */}
@@ -228,7 +228,7 @@ const Navbar = () => {
                 <Card
                   isFooterBlurred
                   radius="lg"
-                  className="border-none mx-0 p-0 skeleton"
+                  className="border-none mx-0 p-0 skeleton bg-[#1d232a]"
                 >
                   <Image
                     width={400}
@@ -259,22 +259,22 @@ const Navbar = () => {
 
           {/* Quote and Experience */}
           <motion.div
-            className="mt-8 max-w-full p-4 bg-green-100/90 rounded-2xl shadow-lg flex flex-col md:flex-row items-center sm:gap-6 gap-0 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 border border-black/90 "
+            className="mt-8 max-w-full p-4 bg-green-100/90 rounded-2xl shadow-lg flex flex-col md:flex-row items-center sm:gap-6 gap-0 md:mt-12 md:max-w-4xl md:p-4 mx-4 md:px-6 border border-black/90 px-7"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-sm text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/90 text-center md:text-left font-mono mb-4 mt-2 sm:mb-0 sm:mt-0">
-              <q>
+            <p className=" text-black/90 md:text-lg border-r-0 md:border-r-2 px-0 md:pr-6 border-black/90 text-center md:text-left font-mono mb-4 mt-2 sm:mb-0 sm:mt-0">
+              <q className="text-sm">
                 berpengalaman writting{" "}
-                <mark className="bg-green-900/90 text-white">
+             <i>  <mark className="bg-green-900/90 text-white">
                   {" "}
                   javascrip, typescrip, tailwind,
                   <br className="hidden md:block" /> React, next, prismaORM,
                   shadcnUi, express, node, MySQL,{" "}
                   <br className="hidden md:block" />
-                  nextUi, dasyUi, html, css, elementor
-                </mark>{" "}
+                  nextUi, daisyUi, html, css, elementor
+                </mark>{" "} </i>
                 untuk website
               </q>
             </p>
@@ -357,7 +357,7 @@ const Navbar = () => {
         <div className="space-y-20">
           <div className="space-y-20">
             {/* Page 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 mx-4 md:mx-44 bg-transparent max-h-full px-7">
               <Box
                 className="relative rounded-2xl w-full h-[300px] md:w-[600px] md:h-[600px] overflow-hidden"
                 sx={{
@@ -435,11 +435,12 @@ const Navbar = () => {
                     >
                       Portofolio:
                       <div className="flex flex-col justify-start">
-                        <a href="node">
+                        <a href="https://luno-blog.vercel.app">
+                       
                         <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-24 text-sm border border-black h-7 flex items-center justify-center">
                           1.Blog-luno
                         </Button> </a>
-                       <a href="node"> <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-36 text-sm border border-black h-7 flex items-center justify-center">
+                       <a href="https://company-luno.vercel.app"> <Button className="bg-white text-black rounded-full mt-1 md:mt-3 w-36 text-sm border border-black h-7 flex items-center justify-center">
                           2.Company-profile{" "}
                         </Button>{" "} </a> 
                       </div>
@@ -492,7 +493,7 @@ const Navbar = () => {
 
             {/* Page 3 */}
             <div className="space-y-20">
-              <div className="flex flex-col items-center justify-center text-center bg-green-900 py-40">
+              <div className="flex flex-col items-center justify-center text-center bg-green-900 py-40 px-7">
                 <p className="text-4xl text-white/80 mb-7 md:text-5xl md:w-[700px] font-mono">
                   Saya juga bisa membantu seberapa masalah project sesuai
                   keingian anda dan beragam{" "}
@@ -642,7 +643,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
-                <div className="h-full font-mono text-2xl text-white/90">
+                <div className="h-full font-mono text-2xl text-white/90 px-7">
                   Hubungi saya jika membutuhkan suatu
                 </div>
               </motion.h1>

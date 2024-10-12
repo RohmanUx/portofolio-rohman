@@ -6,5 +6,6 @@
     animation: marquee-right 10s linear infinite;
   }
   body{
-    background-color: #1d232a;
-  }
+    background-color: #1d232a; 
+    color: white;
+  } 
