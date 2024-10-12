@@ -647,7 +647,8 @@ const Navbar = () => {
                 <div className="h-full font-mono text-2xl text-white/90 px-7">
                   Hubungi saya jika membutuhkan suatu
                 </div>
-              </motion.h1>
+              </motion.h1> 
+              <a href=" mailto:blueKraken9999@gmail.com"> 
               <motion.button
                 className=" rounded-full flex items-center justify-center h-8 w-32 font-mono text-sm bg-white text-black/90 border border-black/90 "
                 whileHover={{ scale: 1.1 }}
@@ -655,7 +656,7 @@ const Navbar = () => {
               >
                 {" "}
                 Contact <IoMailOpen className="ml-2 text-sm" />{" "}
-              </motion.button>
+              </motion.button> </a> 
               <motion.div
                 className="text-black/90 text-6xl md:text-[120px] mt-4 md:mt-7 justify-center flex items-center text-center"
                 initial={{ opacity: 0 }}
@@ -663,6 +664,7 @@ const Navbar = () => {
                 transition={{ duration: 1.5 }}
               >
                 <div className="relative text-center ">
+                  
                   <h2 className="relative m-0 text-custom font-medium leading-none tracking-custom bg-gradient-to-r from-clr-1 via-clr-2 bg-clip-text text-transparent stroke-[4px] animate-aurora-gradient font-mono ">
                     Contact Me...
                   </h2>
