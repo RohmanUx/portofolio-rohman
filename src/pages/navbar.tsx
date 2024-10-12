@@ -494,7 +494,7 @@ const Navbar = () => {
             {/* Page 3 */}
             <div className="space-y-20">
               <div className="flex flex-col items-center justify-center text-center bg-green-900 py-40 px-7">
-                <p className="text-4xl text-white/80 mb-7 md:text-5xl md:w-[700px] font-mono">
+                <p className="text-4xl text-white/80 mb-5 md:text-5xl md:w-[700px] font-mono">
                   Saya juga bisa membantu seberapa masalah project sesuai
                   keingian anda dan beragam{" "}
                 </p>
