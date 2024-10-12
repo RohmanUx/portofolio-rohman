@@ -700,7 +700,7 @@ const Navbar: React.FC = () => {
           {/* Footer page 5 */}
           <div className="w-full flex flex-col md:flex-row justify-between border-t border-white/10 h-auto md:h-10 items-center mt-6 py-4 md:px-8 lg:px-44 text-lg font-mono text-white/90">
             <p className="text-center md:text-left mb-2 md:mb-0">
-              ©2024 rohman.dev all rights reserved
+              ©2024 rohman.com all rights reserved
             </p>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
               <motion.p
