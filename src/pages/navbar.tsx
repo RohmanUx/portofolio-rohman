@@ -433,7 +433,7 @@ const Navbar: React.FC = () => {
                   <DropdownMenu
                     aria-label="Example with disabled actions"
                     disabledKeys={["edit", "delete"]}
-                    className="bg-green-900/10  rounded-xl border border-white/10 backdrop-blur-3xl"
+                    className="bg-green-900  rounded-xl border border-white/10 backdrop-blur-3xl"
                   >
                     <DropdownItem
                       key="text-danger"
@@ -462,7 +462,7 @@ const Navbar: React.FC = () => {
                       className="text-danger"
                       color="danger"
                     >
-                      <div className="text-red-100">belum ada</div>
+                      <div className="text-red-100">belum ada </div>
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
@@ -475,7 +475,7 @@ const Navbar: React.FC = () => {
                   <DropdownMenu
                     aria-label="Example with disabled actions"
                     disabledKeys={["edit", "delete"]}
-                    className="bg-green-900/10  rounded-xl border border-white/10 backdrop-blur-3xl"
+                    className="bg-green-900  rounded-xl border border-white/10 backdrop-blur-3xl"
                   >
                     <DropdownItem
                       key="text-danger"
