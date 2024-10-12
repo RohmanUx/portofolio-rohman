@@ -233,7 +233,7 @@ const Navbar: React.FC = () => {
                 transition={{ duration: 0.5 }}
               >
                 <Card
-                 className="h-[400px] w-[400px] rounded-xl"                              >
+                 className="sm:h-[400px] sm:w-[400px] rounded-xl w-[260px] h-[400px]"                              >
                   <Spline
                     className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
                     scene="https://prod.spline.design/6nm-7sZFtDX2Be4b/scene.splinecode"
