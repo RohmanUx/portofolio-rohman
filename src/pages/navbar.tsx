@@ -147,20 +147,33 @@ const Navbar: React.FC = () => {
           </button>
         </motion.div>
         <div
-          className={`fixed top-0 left-0 w-full bg-black/10 bg-opacity-60 backdrop-blur-3xl shadow-md z-40 px-4 py-2 md:hidden transition-transform transform border-b border-white/10 ${
+          className={`fixed top-0 left-0 w-full bg-black/10 bg-opacity-60 backdrop-blur-3xl shadow-md z-40 px-4 py-2 md:hidden transition-transform transform border-b border-white/10 flex items-end ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <ul className="flex flex-col list-none gap-4 font-normal text-lg">
-            <li>
-              <Link
-                to="/"
-                className="hover:text-blue-500 transition-colors"
+            <div className="flex justify-between items-center">
+              {/* Close button */}
+              <button
+                className="text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
-              </Link>
-            </li>
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>{" "}
+            </div>
             <li>
               <Link
                 to="/"
@@ -232,14 +245,13 @@ const Navbar: React.FC = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <Card
-                 className="sm:h-[400px] sm:w-[400px] rounded-xl w-[260px] h-[400px]"                              >
+                <Card className="sm:h-[400px] sm:w-[400px] rounded-xl w-[260px] h-[400px]">
                   <Spline
                     className="rounded-xl m-0 p-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] lg:w-[1200px] lg:h-[1200px]"
                     scene="https://prod.spline.design/6nm-7sZFtDX2Be4b/scene.splinecode"
                   />
 
-                                 <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20 backdrop-blur-3xl">
+                  <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20 backdrop-blur-3xl">
                     <p className="sm:text-2xl text-black/90 text-sm mx-1">
                       I wanna intership Contact me
                     </p>
