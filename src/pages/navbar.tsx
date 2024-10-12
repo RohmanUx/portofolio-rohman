@@ -147,11 +147,11 @@ const Navbar: React.FC = () => {
           </button>
         </motion.div>
         <div
-          className={`fixed top-0 left-0 w-full bg-black/10 bg-opacity-60 backdrop-blur-3xl shadow-md z-40 px-4 py-2 md:hidden transition-transform transform border-b border-white/10 flex items-end ${
+          className={`fixed top-0 left-0 w-full bg-black/10 bg-opacity-60 backdrop-blur-3xl shadow-md z-40 px-4 py-2 md:hidden transition-transform transform border-b border-white/10 flex justify-center flex-col items-center ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <ul className="flex flex-col list-none gap-4 font-normal text-lg">
+          <ul className="flex flex-col list-none gap-4 font-normal text-lg justify-center items-center">
             <div className="flex justify-between items-center">
               {/* Close button */}
               <button
