@@ -239,6 +239,8 @@ const Navbar: React.FC = () => {
                     scene="https://prod.spline.design/6nm-7sZFtDX2Be4b/scene.splinecode"
                   />
 
+                  
+
                   <CardFooter className="justify-between before:bg-green-100/10 bg-green-900/10 border-green-200/20 border overflow-hidden py-0 absolute before:rounded-none rounded-none bottom-0 shadow-small m-0 z-10 w-full h-20 backdrop-blur-3xl">
                     <p className="sm:text-2xl text-black/90 text-sm mx-1">
                       I wanna intership Contact me
